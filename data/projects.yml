@@ -1,0 +1,312 @@
+# 唯一資料來源。README 與網站都由 scripts/build.py 從這裡產生，請勿直接改 README。
+# 欄位：repo（必填）、summary 一句話介紹（必填）、for 適合誰（必填）、note 注意事項（選填）、added 收錄日期（必填）
+# 星星數、授權、語言、最後更新時間由 GitHub API 自動取得（data/stats.json），不要手動填。
+
+categories:
+  - id: learn
+    name: 入門學習
+    desc: 從零開始理解 AI Agent 與 MCP 的課程、教材與指南。
+    projects:
+      - repo: microsoft/ai-agents-for-beginners
+        summary: 微軟出的 18 堂 AI Agent 入門課，每堂都有講義和可執行的範例程式。
+        for: 第一次接觸 Agent、想有系統學起來的開發者
+        added: 2026-11-10
+      - repo: huggingface/agents-course
+        summary: Hugging Face 的免費 Agent 課程，涵蓋 smolagents、LangChain、LlamaIndex 等主流工具。
+        for: 想邊學邊動手、順便比較不同框架的人
+        added: 2026-11-10
+      - repo: microsoft/mcp-for-beginners
+        summary: MCP（Model Context Protocol）入門教材，用 Python、TypeScript、Java、C# 等多種語言示範怎麼寫 MCP server 和 client。
+        for: 想自己寫 MCP 工具的開發者
+        added: 2026-11-10
+      - repo: shareAI-lab/learn-claude-code
+        summary: 從零打造一個類似 Claude Code 的迷你 Agent，一步步拆解「Agent 外殼」是怎麼運作的。
+        for: 好奇程式碼 Agent 內部原理的人
+        added: 2026-11-10
+      - repo: NirDiamant/GenAI_Agents
+        summary: 50 多個 Agent 技巧的教學與實作，從簡單的聊天機器人到複雜的多 Agent 系統都有。
+        for: 想找具體範例參考的開發者
+        added: 2026-11-10
+      - repo: NirDiamant/agents-towards-production
+        summary: 以程式碼為主的教學，示範 Agent 從原型走到正式上線要處理的部署、監控、安全等問題。
+        for: 準備把 Agent 放進正式產品的團隊
+        added: 2026-11-10
+      - repo: dair-ai/Prompt-Engineering-Guide
+        summary: 提示工程經典指南，內容已擴充到 context engineering、RAG 與 Agent。
+        for: 所有要跟 LLM 打交道的人
+        added: 2026-11-10
+
+  - id: frameworks
+    name: Agent 開發框架
+    desc: 用程式碼打造自己的 Agent。
+    projects:
+      - repo: langchain-ai/langchain
+        summary: 最多人用的 LLM 應用框架，串接模型、工具、資料來源的生態系最完整。
+        for: 需要大量現成整合的專案
+        note: 抽象層較多，簡單需求可能殺雞用牛刀
+        added: 2026-11-10
+      - repo: langchain-ai/langgraph
+        summary: 用「圖」來描述 Agent 流程，能精準控制每一步、支援中斷與恢復。
+        for: 流程複雜、需要可靠性的 Agent
+        added: 2026-11-10
+      - repo: crewAIInc/crewAI
+        summary: 讓多個扮演不同角色的 Agent 分工合作，例如研究員＋寫手＋審稿員。
+        for: 想快速做出多 Agent 協作的人
+        added: 2026-11-10
+      - repo: microsoft/autogen
+        summary: 微軟的多 Agent 對話框架，學術界和研究原型常用。
+        for: 研究多 Agent 互動的開發者
+        added: 2026-11-10
+      - repo: agno-agi/agno
+        summary: 輕量、速度快的 Python Agent 框架，內建記憶、知識庫與多 Agent 團隊。
+        for: 想要簡潔 API 的 Python 開發者
+        added: 2026-11-10
+      - repo: pydantic/pydantic-ai
+        summary: Pydantic 團隊出品，從輸入到輸出都有完整型別檢查的 Agent 框架。
+        for: 重視型別安全、習慣 FastAPI 風格的人
+        added: 2026-11-10
+      - repo: google/adk-python
+        summary: Google 官方 Agent Development Kit，涵蓋開發、評估到部署。
+        for: 使用 Gemini 或 Google Cloud 的團隊
+        added: 2026-11-10
+      - repo: agentscope-ai/agentscope
+        summary: 阿里巴巴開源的多 Agent 框架，強調流程透明、可觀察，支援 MCP。
+        for: 需要看清楚 Agent 每一步在做什麼的人
+        added: 2026-11-10
+      - repo: FoundationAgents/MetaGPT
+        summary: 模擬一間軟體公司，讓產品經理、架構師、工程師等 Agent 協作寫出軟體。
+        for: 研究多 Agent 角色分工的人
+        added: 2026-11-10
+      - repo: deepset-ai/haystack
+        summary: 以模組化管線為核心的框架，特別擅長檢索（RAG）和可控的 Agent 流程。
+        for: 以文件檢索為主的企業應用
+        added: 2026-11-10
+      - repo: letta-ai/letta
+        summary: 前身是 MemGPT，打造有長期記憶、會隨使用持續學習的 Agent。
+        for: 需要 Agent 記住使用者的應用
+        added: 2026-11-10
+
+  - id: coding
+    name: 程式開發 Agent
+    desc: 在終端機或編輯器裡幫你寫程式的 Agent。
+    projects:
+      - repo: google-gemini/gemini-cli
+        summary: Google 開源的終端機 Agent，直接在命令列用 Gemini 讀寫程式碼、執行指令。
+        for: 想要免費額度、在終端機工作的開發者
+        added: 2026-11-10
+      - repo: QwenLM/qwen-code
+        summary: 通義千問團隊的終端機程式 Agent，針對 Qwen 系列模型最佳化。
+        for: 想用開源模型寫程式的人
+        added: 2026-11-10
+      - repo: aaif-goose/goose
+        summary: 可擴充的開源 Agent，不只建議程式碼，還能安裝套件、執行、測試，支援任何 LLM 與 MCP。
+        for: 想要不綁定模型廠商的程式 Agent
+        added: 2026-11-10
+      - repo: openinterpreter/openinterpreter
+        summary: 老牌開源專案，現在定位為給開源模型（Kimi、GLM 等）用的程式 Agent，以 Rust 改寫。
+        for: 想在本機用開源模型寫程式的人
+        added: 2026-11-10
+      - repo: charmbracelet/crush
+        summary: Charm 團隊出品、介面很漂亮的終端機程式 Agent，支援多家模型。
+        for: 重視終端機體驗的開發者
+        added: 2026-11-10
+      - repo: Yeachan-Heo/oh-my-claudecode
+        summary: Claude Code 的多 Agent 協作外掛，讓多個 Agent 分工處理大型任務。
+        for: 重度 Claude Code 使用者
+        added: 2026-11-10
+      - repo: stablyai/orca
+        summary: 同時管理一整隊程式 Agent（Claude Code、Codex 等），用你自己的訂閱，支援桌面、手機與遠端執行。
+        for: 想讓多個 Agent 平行工作的人
+        added: 2026-11-10
+
+  - id: browser
+    name: 瀏覽器與電腦操作
+    desc: 讓 Agent 操作網頁、桌面應用程式。
+    projects:
+      - repo: browser-use/browser-use
+        summary: 讓 AI 操作瀏覽器的 Python 函式庫，能點擊、填表、跨網頁完成任務。
+        for: 想自動化網頁操作的開發者
+        added: 2026-11-10
+      - repo: browser-use/browser-harness
+        summary: 讓 Claude Code、Codex、Cursor 直接使用你已登入的 Chrome，一個提示就能設定好。
+        for: 想讓程式 Agent 存取需要登入的網站
+        note: Agent 會以你的身分操作，要留意權限
+        added: 2026-11-10
+      - repo: Skyvern-AI/skyvern
+        summary: 結合 LLM 與視覺辨識的瀏覽器自動化，網站改版也不容易壞。
+        for: 需要長期跑表單、下單等網頁流程的團隊
+        note: AGPL-3.0 授權，商用前要留意
+        added: 2026-11-10
+      - repo: trycua/cua
+        summary: 電腦操作（computer-use）Agent 的基礎設施，提供跨作業系統沙盒、驅動程式和評測基準。
+        for: 開發或訓練桌面操作 Agent 的人
+        added: 2026-11-10
+      - repo: microsoft/playwright-mcp
+        summary: 微軟官方 Playwright MCP server，讓 Agent 透過結構化的頁面資訊操作瀏覽器。
+        for: 想讓 Claude、Cursor 等工具操作網頁的人
+        added: 2026-11-10
+      - repo: ChromeDevTools/chrome-devtools-mcp
+        summary: Chrome 官方 DevTools MCP，讓程式 Agent 能看 console、網路請求、效能數據來除錯。
+        for: 前端開發者
+        added: 2026-11-10
+
+  - id: mcp
+    name: MCP 伺服器與 SDK
+    desc: 用 MCP 幫 Agent 接上各種工具與服務。
+    projects:
+      - repo: modelcontextprotocol/servers
+        summary: MCP 官方的參考伺服器合集，包含檔案系統、Git、網頁擷取等範例。
+        for: 想看標準寫法或找基本工具的人
+        added: 2026-11-10
+      - repo: modelcontextprotocol/python-sdk
+        summary: MCP 官方 Python SDK，寫 MCP server 或 client 的首選。
+        for: Python 開發者
+        added: 2026-11-10
+      - repo: modelcontextprotocol/typescript-sdk
+        summary: MCP 官方 TypeScript SDK。
+        for: JavaScript / TypeScript 開發者
+        added: 2026-11-10
+      - repo: github/github-mcp-server
+        summary: GitHub 官方 MCP server，讓 Agent 讀寫 issue、PR、程式碼與 Actions。
+        for: 想讓 Agent 幫忙管理 GitHub 的人
+        added: 2026-11-10
+      - repo: upstash/context7
+        summary: 即時提供最新版函式庫文件給 Agent，減少 AI 寫出舊版或不存在的 API。
+        for: 所有用 AI 寫程式的人
+        added: 2026-11-10
+      - repo: oraios/serena
+        summary: 提供語意層級的程式碼搜尋與編輯，讓 Agent 像用 IDE 一樣理解大型專案。
+        for: 在大型程式碼庫裡用 Agent 的人
+        added: 2026-11-10
+      - repo: czlonkowski/n8n-mcp
+        summary: 讓 Claude、Cursor 等工具直接幫你設計 n8n 自動化流程。
+        for: n8n 使用者
+        added: 2026-11-10
+      - repo: ahujasid/mcp-for-blender
+        summary: 用自然語言操作 Blender 建 3D 模型（社群外掛，非官方）。
+        for: 3D 創作者
+        added: 2026-11-10
+      - repo: DayuanJiang/next-ai-draw-io
+        summary: 用聊天的方式畫 draw.io 圖表，有網頁版、桌面版，也有 MCP server。
+        for: 常畫架構圖、流程圖的人
+        added: 2026-11-10
+      - repo: ComposioHQ/composio
+        summary: 一次接上 1000 多種 SaaS 工具，並處理好授權登入，省去逐一串接的麻煩。
+        for: 要讓 Agent 操作大量外部服務的開發者
+        added: 2026-11-10
+
+  - id: memory
+    name: 記憶與上下文
+    desc: 讓 Agent 記得更多、用更少 token。
+    projects:
+      - repo: mem0ai/mem0
+        summary: Agent 的記憶層，自動記住使用者偏好與對話重點，可直接嵌入現有應用。
+        for: 做個人化助理或客服的人
+        added: 2026-11-10
+      - repo: thedotmack/claude-mem
+        summary: 自動記錄 Agent 每次工作的內容並壓縮，下次開新對話時帶回相關記憶。
+        for: 覺得 Claude Code 每次都「失憶」的人
+        added: 2026-11-10
+      - repo: vectorize-io/hindsight
+        summary: 會從經驗中學習的 Agent 記憶系統。
+        for: 研究長期記憶的開發者
+        added: 2026-11-10
+      - repo: VectifyAI/PageIndex
+        summary: 不用向量資料庫的 RAG，把文件建成目錄樹，讓 LLM 像人一樣翻目錄找答案。
+        for: 處理長篇報告、財報、法規文件的人
+        added: 2026-11-10
+      - repo: headroomlabs-ai/headroom
+        summary: 在工具輸出、日誌、檔案送進 LLM 前先壓縮，有函式庫、代理伺服器和 MCP 三種用法。
+        for: 想省 token 費用的人
+        added: 2026-11-10
+
+  - id: scraping
+    name: 網頁資料擷取
+    desc: 把網頁變成 Agent 讀得懂的資料。
+    projects:
+      - repo: firecrawl/firecrawl
+        summary: 把整個網站爬下來轉成乾淨的 Markdown 或結構化資料，專為 LLM 設計。
+        for: 需要餵網頁資料給 AI 的人
+        note: AGPL-3.0 授權，也有付費雲端版
+        added: 2026-11-10
+      - repo: unclecode/crawl4ai
+        summary: 開源、對 LLM 友善的爬蟲，輸出 Markdown，可以自己架設。
+        for: 想免費自架爬蟲的開發者
+        added: 2026-11-10
+      - repo: D4Vinci/Scrapling
+        summary: Python 爬蟲框架，從單一請求到大規模爬取都能處理，網站結構改變時能自動調整。
+        for: 需要穩定爬蟲的 Python 開發者
+        note: 請遵守目標網站的使用條款
+        added: 2026-11-10
+
+  - id: platforms
+    name: 無程式碼平台與自架介面
+    desc: 不太寫程式也能打造 Agent，或自架 AI 介面。
+    projects:
+      - repo: n8n-io/n8n
+        summary: 視覺化工作流程自動化平台，內建 AI 節點，有 400 多種整合，可以自架。
+        for: 想把 AI 接進日常工作流程的人
+        note: fair-code 授權，不是完全的開源授權
+        added: 2026-11-10
+      - repo: langgenius/dify
+        summary: 拖拉式打造 Agent 流程和 RAG 知識庫的平台，可自架或用雲端版。
+        for: 想快速做出企業內部 AI 應用的團隊
+        added: 2026-11-10
+      - repo: activepieces/activepieces
+        summary: 開源的 Zapier 替代品，內建約 400 個 MCP server。
+        for: 想要開源自動化平台的人
+        added: 2026-11-10
+      - repo: open-webui/open-webui
+        summary: 最受歡迎的自架 AI 聊天介面，支援 Ollama 本地模型和 OpenAI 相容 API。
+        for: 想在本機或公司內部架 ChatGPT 的人
+        added: 2026-11-10
+      - repo: LibreChat-AI/LibreChat
+        summary: 功能完整的開源 ChatGPT 替代介面，一個介面切換多家模型，支援 Agent、MCP 與 Skills。
+        for: 想統一管理多家模型的團隊
+        added: 2026-11-10
+      - repo: Mintplex-Labs/anything-llm
+        summary: 本機優先的全功能 AI 應用，可以跟文件對話、執行 Agent，不必把資料交給雲端。
+        for: 重視隱私的個人與小團隊
+        added: 2026-11-10
+      - repo: infiniflow/ragflow
+        summary: 以深度文件理解為核心的 RAG 引擎，擅長處理表格、PDF 等複雜格式。
+        for: 要做企業知識庫的團隊
+        added: 2026-11-10
+
+  - id: research
+    name: 研究與通用 Agent
+    desc: 能自主研究、多步驟完成任務的 Agent。
+    projects:
+      - repo: assafelovic/gpt-researcher
+        summary: 自動上網研究任何主題，彙整成附來源的報告，支援各家 LLM。
+        for: 需要快速做背景研究的人
+        added: 2026-11-10
+      - repo: bytedance/deer-flow
+        summary: 字節跳動開源的長任務 Agent，結合沙盒、記憶、技能和子 Agent，能研究、寫程式、產出內容。
+        for: 想研究「超級 Agent」架構的人
+        added: 2026-11-10
+      - repo: opensandbox-group/OpenSandbox
+        summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
+        for: 需要讓 Agent 安全執行程式碼的團隊
+        added: 2026-11-10
+
+  - id: lists
+    name: 外掛、技能與其他清單
+    desc: 更多擴充資源。
+    projects:
+      - repo: anthropics/claude-plugins-official
+        summary: Anthropic 官方維護的 Claude Code 外掛目錄。
+        for: Claude Code 使用者
+        added: 2026-11-10
+      - repo: VoltAgent/awesome-agent-skills
+        summary: 收錄 1000 多個 Agent Skills，相容 Claude Code、Codex、Gemini CLI、Cursor 等。
+        for: 想擴充 Agent 能力的人
+        added: 2026-11-10
+      - repo: hesreallyhim/awesome-claude-code
+        summary: 精選的 Claude Code 資源清單：指令、工作流程、外掛等。
+        for: Claude Code 使用者
+        added: 2026-11-10
+      - repo: punkpeye/awesome-mcp-servers
+        summary: 最大的 MCP server 清單（英文）。
+        for: 想找特定 MCP 工具的人
+        added: 2026-11-10
