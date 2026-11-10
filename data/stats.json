@@ -1,5 +1,5 @@
 {
- "_updated": "2026-11-10T22:15+08:00",
+ "_updated": "2026-11-10T22:17+08:00",
  "aaif-goose/goose": {
   "archived": false,
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
@@ -88,7 +88,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-10T14:04:04Z",
-  "stars": 85213
+  "stars": 85214
  },
  "charmbracelet/crush": {
   "archived": false,
@@ -106,7 +106,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-10T13:52:44Z",
-  "stars": 55058
+  "stars": 55059
  },
  "composiohq/composio": {
   "archived": false,
@@ -114,7 +114,7 @@
   "full_name": "ComposioHQ/composio",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-10T14:08:05Z",
+  "pushed_at": "2026-11-10T14:16:39Z",
   "stars": 31011
  },
  "crewaiinc/crewai": {
@@ -124,7 +124,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-10T00:05:12Z",
-  "stars": 60725
+  "stars": 60726
  },
  "czlonkowski/n8n-mcp": {
   "archived": false,
@@ -268,7 +268,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-10T05:42:48Z",
-  "stars": 44751
+  "stars": 44752
  },
  "langgenius/dify": {
   "archived": false,
@@ -384,7 +384,7 @@
   "full_name": "n8n-io/n8n",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-10T14:15:04Z",
+  "pushed_at": "2026-11-10T14:16:51Z",
   "stars": 209994
  },
  "nirdiamant/agents-towards-production": {
@@ -430,7 +430,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-10T13:01:45Z",
-  "stars": 17093
+  "stars": 17094
  },
  "oraios/serena": {
   "archived": false,
@@ -465,7 +465,7 @@
   "full_name": "QwenLM/qwen-code",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-10T14:14:14Z",
+  "pushed_at": "2026-11-10T14:15:59Z",
   "stars": 29162
  },
  "shareai-lab/learn-claude-code": {
@@ -475,7 +475,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-10-27T04:47:00Z",
-  "stars": 80206
+  "stars": 80207
  },
  "skyvern-ai/skyvern": {
   "archived": false,
@@ -492,8 +492,8 @@
   "full_name": "stablyai/orca",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-10T14:02:29Z",
-  "stars": 121092
+  "pushed_at": "2026-11-10T14:15:35Z",
+  "stars": 121094
  },
  "thedotmack/claude-mem": {
   "archived": false,
@@ -511,7 +511,7 @@
   "language": "Rust",
   "license": "MIT",
   "pushed_at": "2026-11-10T14:12:17Z",
-  "stars": 32113
+  "stars": 32114
  },
  "unclecode/crawl4ai": {
   "archived": false,
