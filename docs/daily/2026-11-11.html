@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-11 每日 AI Agent 精選</title><meta name="description" content="精選 AI Agent、MCP 與相關開源工具，每天更新，附繁體中文導讀。">
+<link rel="alternate" type="application/rss+xml" title="Awesome AI Agents 繁中" href="https://markforcode.github.io/awesome-ai-agents/feed.xml">
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a65;--line:#e6e3dc;--acc:#0b6e4f;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ecebe6;--mut:#9b9a94;--line:#2c2b28;--acc:#5ccf9f;--card:#1c1c1a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:40px 20px 80px}
+header h1{font-size:2rem;margin:0 0 6px;letter-spacing:-.01em}header p{color:var(--mut);margin:0}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px}
+nav a{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.9rem;text-decoration:none;color:var(--fg)}
+nav a:hover{border-color:var(--acc);color:var(--acc)}
+h2{margin:48px 0 4px;font-size:1.35rem}h2+p.desc{color:var(--mut);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+.card a.name{font-weight:600;color:var(--acc);text-decoration:none}.meta{color:var(--mut);font-size:.85rem;margin-left:6px}
+.card p{margin:6px 0 0}.for{color:var(--mut);font-size:.92rem}.note{color:#b4590a;font-size:.92rem}
+a{color:var(--acc)}.daily li{margin:6px 0}footer{margin-top:60px;color:var(--mut);font-size:.85rem}
+input#q{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font-size:1rem;margin-top:16px}
+</style></head><body><div class="wrap"><p><a href="../">← 回到清單</a></p><h2>2026-11-11 給 Agent 一個可以亂來的地方：手機、虛擬機與拋棄式 Windows</h2>
+<blockquote>這週冒出好幾個「讓 Agent 動手，但限制它能碰到什麼」的專案：有的把 Agent 關進虛擬機，有的讓它操作手機但關鍵步驟要人按允許。今天收錄 4 個，三個跟隔離與把關有關，另一個處理 Agent 查資料庫時最怕的「SQL 能跑但答案錯」。</blockquote>
+<h3>今日新收錄</h3>
+<ul>
+<li><strong><a href="https://github.com/DIYgod/pinky">DIYgod/pinky</a></strong> · 瀏覽器與電腦操作<br>透過 MCP 讓 Claude Code、Codex 等 Agent 操作真實的 iPhone 或 Android 手機。跟一般手機自動化工具不同的是，付款、傳訊這類步驟由 Pinky 的閘道攔下等你核准，Agent 沒辦法自己放行，銀行和密碼管理 App 也預設看不到。目前還是 pre-alpha。</li>
+<li><strong><a href="https://github.com/devvmhq/devvm">devvmhq/devvm</a></strong> · 程式開發 Agent<br>在專案資料夾執行 <code>devvm</code>，就會開一台只掛載這個資料夾的 Lima 虛擬機，依專案檔自動裝好工具鏈，再讓 Agent 在裡面跑。網路預設只放行允許清單上的主機，token 也留在主機端，比直接在自己電腦上開放 Agent 執行指令安心得多。</li>
+<li><strong><a href="https://github.com/shanselman/sandbox-mcp">shanselman/sandbox-mcp</a></strong> · MCP 伺服器與 SDK<br>Scott Hanselman 做的工具，用 Windows Sandbox 開一台全新的 Windows，讓 Agent 部署程式、操作介面，測完就整台刪掉。適合抓「少裝一個執行環境就當掉」這類問題，但需要 Windows Pro 以上版本。</li>
+<li><strong><a href="https://github.com/gogoymh/auto-ontology-mcp">gogoymh/auto-ontology-mcp</a></strong> · 記憶與上下文<br>把 NVIDIA Auto Ontology 的語意層做成 MCP 伺服器，理解與撰寫 SQL 交給你本來在用的模型，伺服器負責驗證並以唯讀方式執行。另外也能把收據、筆記整理成可查詢的個人知識庫，並匯出成 Obsidian 筆記庫。</li>
+</ul>
+<p>有想推薦的專案？歡迎到 <a href="https://github.com/markforcode/awesome-ai-agents/issues">GitHub</a> 開 issue。</p>
+<footer>由 <a href="https://github.com/markforcode/awesome-ai-agents">markforcode/awesome-ai-agents</a> 自動產生 · 內容以 CC0 釋出</footer></div></body></html>

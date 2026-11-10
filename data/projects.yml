@@ -118,6 +118,11 @@ categories:
         summary: 同時管理一整隊程式 Agent（Claude Code、Codex 等），用你自己的訂閱，支援桌面、手機與遠端執行。
         for: 想讓多個 Agent 平行工作的人
         added: 2026-11-10
+      - repo: devvmhq/devvm
+        summary: 每個專案資料夾配一台獨立的 Lima 虛擬機，自動裝好專案需要的工具鏈，讓 Claude Code、Codex 等程式 Agent 在裡面工作，碰不到主機的其他檔案。
+        for: 想讓程式 Agent 放手執行指令、又不想讓它動到自己電腦的開發者
+        note: 支援 macOS 13 以上與 Linux；仍在早期開發
+        added: 2026-11-11
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -149,6 +154,11 @@ categories:
         summary: Chrome 官方 DevTools MCP，讓程式 Agent 能看 console、網路請求、效能數據來除錯。
         for: 前端開發者
         added: 2026-11-10
+      - repo: DIYgod/pinky
+        summary: 透過 MCP 讓 Agent 操作真實的 iPhone 或 Android 手機，付款、傳訊等高風險步驟會停下來等你在電腦上按允許，全程有錄影紀錄。
+        for: 想讓 Agent 幫忙跑手機 App 流程、又要保留人工把關的人
+        note: 仍是 pre-alpha；操作真實手機請先在模擬器或備用機試用
+        added: 2026-11-11
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -194,6 +204,11 @@ categories:
         summary: 一次接上 1000 多種 SaaS 工具，並處理好授權登入，省去逐一串接的麻煩。
         for: 要讓 Agent 操作大量外部服務的開發者
         added: 2026-11-10
+      - repo: shanselman/sandbox-mcp
+        summary: 用 Windows Sandbox 開一台用完即丟的乾淨 Windows，讓 Agent 部署程式、用 UI Automation 操作介面，並留下截圖、錄影與報告；有 CLI 和 MCP 兩種介面。
+        for: 開發 Windows 桌面應用、想抓出「我的電腦上可以跑」問題的人
+        note: 需要 Windows 11 24H2 以上的 Pro／Enterprise／Education 版，Home 版沒有 Windows Sandbox
+        added: 2026-11-11
 
   - id: memory
     name: 記憶與上下文
@@ -219,6 +234,10 @@ categories:
         summary: 在工具輸出、日誌、檔案送進 LLM 前先壓縮，有函式庫、代理伺服器和 MCP 三種用法。
         for: 想省 token 費用的人
         added: 2026-11-10
+      - repo: gogoymh/auto-ontology-mcp
+        summary: 把 NVIDIA Auto Ontology 的語意層包成 MCP 伺服器，由你的 Agent 建立資料庫的業務詞彙並寫出經過檢查的唯讀 SQL，也能當個人知識庫用。
+        for: 想用自然語言查公司資料庫，或想建立可查詢個人知識庫的人
+        added: 2026-11-11
 
   - id: scraping
     name: 網頁資料擷取
