@@ -118,6 +118,16 @@ categories:
         summary: 同時管理一整隊程式 Agent（Claude Code、Codex 等），用你自己的訂閱，支援桌面、手機與遠端執行。
         for: 想讓多個 Agent 平行工作的人
         added: 2026-11-10
+      - repo: KKKKhazix/agent-autoloop
+        summary: 讓 Claude Code、Codex 等命令列 Agent 依規則在背景接手定時任務或 GitHub issue 等事件，需要人決定時才推卡片到飛書、Slack、Discord 或桌面通知。
+        for: 想讓命令列 Agent 在沒人盯著時持續工作的人
+        note: 文件以簡體中文為主；需要 Node 24 以上
+        added: 2026-11-12
+      - repo: devvmhq/devvm
+        summary: 每個專案資料夾開一台獨立的 Lima 虛擬機，自動偵測需要的工具鏈，讓 Claude Code、Codex 等 Agent 在裡面工作，預設只能連到允許的網域。
+        for: 想讓程式 Agent 放手做事、又不想讓它碰到本機的人
+        note: 支援 macOS 13 以上與 Linux；作者提醒沙盒無法堵住所有漏洞，使用前先看安全說明
+        added: 2026-11-12
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -149,6 +159,11 @@ categories:
         summary: Chrome 官方 DevTools MCP，讓程式 Agent 能看 console、網路請求、效能數據來除錯。
         for: 前端開發者
         added: 2026-11-10
+      - repo: DIYgod/pinky
+        summary: 透過 MCP 讓 Agent 操作真實的 iPhone 或 Android 手機，付款等高風險步驟要你在電腦上按允許才會執行，並保留每一步的截圖與錄影。
+        for: 想讓 Agent 代操手機 App、又要保留控制權的人
+        note: 仍在 pre-alpha 階段
+        added: 2026-11-12
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -194,6 +209,11 @@ categories:
         summary: 一次接上 1000 多種 SaaS 工具，並處理好授權登入，省去逐一串接的麻煩。
         for: 要讓 Agent 操作大量外部服務的開發者
         added: 2026-11-10
+      - repo: shanselman/sandbox-mcp
+        summary: 用 Windows Sandbox 開一台全新、用完即丟的 Windows 11，讓 Agent 部署並操作你的桌面程式、記錄當機與缺少的相依套件，有 CLI 也有 MCP 介面。
+        for: 開發 Windows 桌面應用程式、想在乾淨環境測試的人
+        note: 需要 Windows 11 24H2 以上的 Pro、Enterprise 或 Education 版
+        added: 2026-11-12
 
   - id: memory
     name: 記憶與上下文
