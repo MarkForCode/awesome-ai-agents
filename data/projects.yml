@@ -149,6 +149,11 @@ categories:
         summary: Chrome 官方 DevTools MCP，讓程式 Agent 能看 console、網路請求、效能數據來除錯。
         for: 前端開發者
         added: 2026-11-10
+      - repo: vostride/agent-qa
+        summary: 透過CLI或MCP以自然語言測試網頁、Android與iOS，結合持久memidex記憶、經驗驗證後的自我改進及步驟截圖證據。
+        for: 想讓程式Agent執行端對端QA的開發者與測試工程師
+        note: '[官網](https://vostride.com)；FSL-1.1-ALv2授權；允許範圍內的本機軟體免費，模型與執行環境費用另計。'
+        added: 2026-11-11
 
   - id: mcp
     name: MCP 伺服器與 SDK
