@@ -118,11 +118,16 @@ categories:
         summary: 同時管理一整隊程式 Agent（Claude Code、Codex 等），用你自己的訂閱，支援桌面、手機與遠端執行。
         for: 想讓多個 Agent 平行工作的人
         added: 2026-11-10
+      - repo: KKKKhazix/agent-autoloop
+        summary: 讓 Claude Code、Codex 等命令列 Agent 依規則在背景接手定時任務或 GitHub issue 等事件，需要人決定時才推卡片到飛書、Slack、Discord 或桌面通知。
+        for: 想讓命令列 Agent 在沒人盯著時持續工作的人
+        note: 文件以簡體中文為主；需要 Node 24 以上
+        added: 2026-11-12
       - repo: devvmhq/devvm
-        summary: 每個專案資料夾配一台獨立的 Lima 虛擬機，自動裝好專案需要的工具鏈，讓 Claude Code、Codex 等程式 Agent 在裡面工作，碰不到主機的其他檔案。
-        for: 想讓程式 Agent 放手執行指令、又不想讓它動到自己電腦的開發者
-        note: 支援 macOS 13 以上與 Linux；仍在早期開發
-        added: 2026-11-11
+        summary: 每個專案資料夾開一台獨立的 Lima 虛擬機，自動偵測需要的工具鏈，讓 Claude Code、Codex 等 Agent 在裡面工作，預設只能連到允許的網域。
+        for: 想讓程式 Agent 放手做事、又不想讓它碰到本機的人
+        note: 支援 macOS 13 以上與 Linux；作者提醒沙盒無法堵住所有漏洞，使用前先看安全說明
+        added: 2026-11-12
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -155,10 +160,15 @@ categories:
         for: 前端開發者
         added: 2026-11-10
       - repo: DIYgod/pinky
-        summary: 透過 MCP 讓 Agent 操作真實的 iPhone 或 Android 手機，付款、傳訊等高風險步驟會停下來等你在電腦上按允許，全程有錄影紀錄。
-        for: 想讓 Agent 幫忙跑手機 App 流程、又要保留人工把關的人
-        note: 仍是 pre-alpha；操作真實手機請先在模擬器或備用機試用
-        added: 2026-11-11
+        summary: 透過 MCP 讓 Agent 操作真實的 iPhone 或 Android 手機，付款等高風險步驟要你在電腦上按允許才會執行，並保留每一步的截圖與錄影。
+        for: 想讓 Agent 代操手機 App、又要保留控制權的人
+        note: 仍在 pre-alpha 階段
+        added: 2026-11-12
+      - repo: vostride/agent-qa
+        summary: 用自然語言描述使用流程，由 Agent 在網頁、Android 或 iOS 上實際操作測試，失敗時留下對應步驟的截圖；可從 CLI、儀表板或透過 MCP 從程式 Agent 呼叫，並把測試中學到的經驗存成 repo 裡可審查的檔案。
+        for: 想讓程式 Agent 跑端對端測試的開發者與 QA 工程師
+        note: FSL-1.1-ALv2 授權（原始碼公開，兩年後轉為 Apache-2.0，期間限制競爭用途），不是 OSI 認可的開源授權；需要 Node.js 24 以上，模型費用另計
+        added: 2026-11-12
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -205,10 +215,10 @@ categories:
         for: 要讓 Agent 操作大量外部服務的開發者
         added: 2026-11-10
       - repo: shanselman/sandbox-mcp
-        summary: 用 Windows Sandbox 開一台用完即丟的乾淨 Windows，讓 Agent 部署程式、用 UI Automation 操作介面，並留下截圖、錄影與報告；有 CLI 和 MCP 兩種介面。
-        for: 開發 Windows 桌面應用、想抓出「我的電腦上可以跑」問題的人
-        note: 需要 Windows 11 24H2 以上的 Pro／Enterprise／Education 版，Home 版沒有 Windows Sandbox
-        added: 2026-11-11
+        summary: 用 Windows Sandbox 開一台全新、用完即丟的 Windows 11，讓 Agent 部署並操作你的桌面程式、記錄當機與缺少的相依套件，有 CLI 也有 MCP 介面。
+        for: 開發 Windows 桌面應用程式、想在乾淨環境測試的人
+        note: 需要 Windows 11 24H2 以上的 Pro、Enterprise 或 Education 版
+        added: 2026-11-12
 
   - id: memory
     name: 記憶與上下文

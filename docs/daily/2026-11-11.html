@@ -17,14 +17,11 @@ h2{margin:48px 0 4px;font-size:1.35rem}h2+p.desc{color:var(--mut);margin:0 0 16p
 .card p{margin:6px 0 0}.for{color:var(--mut);font-size:.92rem}.note{color:#b4590a;font-size:.92rem}
 a{color:var(--acc)}.daily li{margin:6px 0}footer{margin-top:60px;color:var(--mut);font-size:.85rem}
 input#q{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font-size:1rem;margin-top:16px}
-</style></head><body><div class="wrap"><p><a href="../">← 回到清單</a></p><h2>2026-11-11 給 Agent 一個可以亂來的地方：手機、虛擬機與拋棄式 Windows</h2>
-<blockquote>這週冒出好幾個「讓 Agent 動手，但限制它能碰到什麼」的專案：有的把 Agent 關進虛擬機，有的讓它操作手機但關鍵步驟要人按允許。今天收錄 4 個，三個跟隔離與把關有關，另一個處理 Agent 查資料庫時最怕的「SQL 能跑但答案錯」。</blockquote>
+</style></head><body><div class="wrap"><p><a href="../">← 回到清單</a></p><h2>2026-11-11 讓 Agent 查資料庫，別再「SQL 能跑但答案錯」</h2>
+<blockquote>這天原本選了 4 個專案，其中 3 個（pinky、devvm、sandbox-mcp）已併入 <a href="https://markforcode.github.io/awesome-ai-agents/daily/2026-11-12.html">11-12 的更新</a>，這裡只留下另一個：處理 Agent 查資料庫時最怕的「查詢跑得動、數字卻是錯的」。</blockquote>
 <h3>今日新收錄</h3>
 <ul>
-<li><strong><a href="https://github.com/DIYgod/pinky">DIYgod/pinky</a></strong> · 瀏覽器與電腦操作<br>透過 MCP 讓 Claude Code、Codex 等 Agent 操作真實的 iPhone 或 Android 手機。跟一般手機自動化工具不同的是，付款、傳訊這類步驟由 Pinky 的閘道攔下等你核准，Agent 沒辦法自己放行，銀行和密碼管理 App 也預設看不到。目前還是 pre-alpha。</li>
-<li><strong><a href="https://github.com/devvmhq/devvm">devvmhq/devvm</a></strong> · 程式開發 Agent<br>在專案資料夾執行 <code>devvm</code>，就會開一台只掛載這個資料夾的 Lima 虛擬機，依專案檔自動裝好工具鏈，再讓 Agent 在裡面跑。網路預設只放行允許清單上的主機，token 也留在主機端，比直接在自己電腦上開放 Agent 執行指令安心得多。</li>
-<li><strong><a href="https://github.com/shanselman/sandbox-mcp">shanselman/sandbox-mcp</a></strong> · MCP 伺服器與 SDK<br>Scott Hanselman 做的工具，用 Windows Sandbox 開一台全新的 Windows，讓 Agent 部署程式、操作介面，測完就整台刪掉。適合抓「少裝一個執行環境就當掉」這類問題，但需要 Windows Pro 以上版本。</li>
-<li><strong><a href="https://github.com/gogoymh/auto-ontology-mcp">gogoymh/auto-ontology-mcp</a></strong> · 記憶與上下文<br>把 NVIDIA Auto Ontology 的語意層做成 MCP 伺服器，理解與撰寫 SQL 交給你本來在用的模型，伺服器負責驗證並以唯讀方式執行。另外也能把收據、筆記整理成可查詢的個人知識庫，並匯出成 Obsidian 筆記庫。</li>
+<li><strong><a href="https://github.com/gogoymh/auto-ontology-mcp">gogoymh/auto-ontology-mcp</a></strong> · 記憶與上下文<br>把 NVIDIA Auto Ontology 的語意層做成 MCP 伺服器，理解與撰寫 SQL 交給你本來在用的模型，伺服器負責驗證並以唯讀方式執行。另外也能把收據、筆記整理成可查詢的個人知識庫，並匯出成 Obsidian 筆記庫。不需要另外架模型端點或設定 API key。</li>
 </ul>
 <p>有想推薦的專案？歡迎到 <a href="https://github.com/markforcode/awesome-ai-agents/issues">GitHub</a> 開 issue。</p>
 <footer>由 <a href="https://github.com/markforcode/awesome-ai-agents">markforcode/awesome-ai-agents</a> 自動產生 · 內容以 CC0 釋出</footer></div></body></html>
