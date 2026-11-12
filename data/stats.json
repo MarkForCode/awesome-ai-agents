@@ -1,5 +1,5 @@
 {
- "_updated": "2026-11-12T23:45+08:00",
+ "_updated": "2026-11-12T23:48+08:00",
  "aaif-goose/goose": {
   "archived": false,
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
@@ -7,7 +7,7 @@
   "language": "Rust",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T15:36:59Z",
-  "stars": 56496
+  "stars": 56497
  },
  "activepieces/activepieces": {
   "archived": false,
@@ -25,7 +25,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T10:21:46Z",
-  "stars": 35869
+  "stars": 35870
  },
  "agno-agi/agno": {
   "archived": false,
@@ -33,7 +33,7 @@
   "full_name": "agno-agi/agno",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T15:33:18Z",
+  "pushed_at": "2026-11-12T15:46:02Z",
   "stars": 43177
  },
  "ahujasid/mcp-for-blender": {
@@ -79,7 +79,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T02:11:28Z",
-  "stars": 120829
+  "stars": 120830
  },
  "bytedance/deer-flow": {
   "archived": false,
@@ -88,7 +88,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T14:30:49Z",
-  "stars": 85285
+  "stars": 85284
  },
  "charmbracelet/crush": {
   "archived": false,
@@ -142,7 +142,7 @@
   "language": "Python",
   "license": "BSD-3-Clause",
   "pushed_at": "2026-11-11T19:16:10Z",
-  "stars": 101997
+  "stars": 101998
  },
  "dair-ai/prompt-engineering-guide": {
   "archived": false,
@@ -196,7 +196,7 @@
   "language": "TypeScript",
   "license": "AGPL-3.0",
   "pushed_at": "2026-11-12T15:30:58Z",
-  "stars": 201176
+  "stars": 201177
  },
  "foundationagents/metagpt": {
   "archived": false,
@@ -241,7 +241,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T07:27:38Z",
-  "stars": 79452
+  "stars": 79453
  },
  "hesreallyhim/awesome-claude-code": {
   "archived": false,
@@ -250,7 +250,7 @@
   "language": "Python",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-12T15:05:55Z",
-  "stars": 57848
+  "stars": 57850
  },
  "huggingface/agents-course": {
   "archived": false,
@@ -277,7 +277,7 @@
   "language": "TypeScript",
   "license": "MIT",
   "pushed_at": "2026-11-12T11:13:24Z",
-  "stars": 4694
+  "stars": 4695
  },
  "langchain-ai/langchain": {
   "archived": false,
@@ -367,7 +367,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-11T18:08:39Z",
-  "stars": 39553
+  "stars": 39555
  },
  "mintplex-labs/anything-llm": {
   "archived": false,
@@ -411,7 +411,7 @@
   "full_name": "n8n-io/n8n",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T15:44:03Z",
+  "pushed_at": "2026-11-12T15:45:53Z",
   "stars": 210300
  },
  "nirdiamant/agents-towards-production": {
@@ -492,8 +492,8 @@
   "full_name": "QwenLM/qwen-code",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T15:39:15Z",
-  "stars": 29638
+  "pushed_at": "2026-11-12T15:46:08Z",
+  "stars": 29640
  },
  "shanselman/sandbox-mcp": {
   "archived": false,
@@ -502,7 +502,7 @@
   "language": "JavaScript",
   "license": "MIT",
   "pushed_at": "2026-11-12T07:54:12Z",
-  "stars": 417
+  "stars": 418
  },
  "shareai-lab/learn-claude-code": {
   "archived": false,
@@ -511,7 +511,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-10-27T04:47:00Z",
-  "stars": 80333
+  "stars": 80332
  },
  "skyvern-ai/skyvern": {
   "archived": false,
@@ -528,8 +528,8 @@
   "full_name": "stablyai/orca",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T15:45:08Z",
-  "stars": 123176
+  "pushed_at": "2026-11-12T15:46:06Z",
+  "stars": 123178
  },
  "thedotmack/claude-mem": {
   "archived": false,
@@ -546,7 +546,7 @@
   "full_name": "trycua/cua",
   "language": "Rust",
   "license": "MIT",
-  "pushed_at": "2026-11-12T15:43:20Z",
+  "pushed_at": "2026-11-12T15:46:29Z",
   "stars": 32244
  },
  "unclecode/crawl4ai": {
@@ -583,7 +583,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T15:19:16Z",
-  "stars": 60654
+  "stars": 60655
  },
  "voltagent/awesome-agent-skills": {
   "archived": false,

@@ -190,7 +190,7 @@
 - **[modelcontextprotocol/typescript-sdk](https://github.com/modelcontextprotocol/typescript-sdk)** · ⭐ 13.8k · TypeScript  
   MCP 官方 TypeScript SDK。  
   👤 **適合**：JavaScript / TypeScript 開發者
-- **[shanselman/sandbox-mcp](https://github.com/shanselman/sandbox-mcp)** · ⭐ 417 · JavaScript · MIT  
+- **[shanselman/sandbox-mcp](https://github.com/shanselman/sandbox-mcp)** · ⭐ 418 · JavaScript · MIT  
   用 Windows Sandbox 開一台全新、用完即丟的 Windows 11，讓 Agent 部署並操作你的桌面程式、記錄當機與缺少的相依套件，有 CLI 也有 MCP 介面。  
   👤 **適合**：開發 Windows 桌面應用程式、想在乾淨環境測試的人　⚠️ 需要 Windows 11 24H2 以上的 Pro、Enterprise 或 Education 版
 
@@ -285,7 +285,7 @@
 - **[punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · ⭐ 97.7k · MIT  
   最大的 MCP server 清單（英文）。  
   👤 **適合**：想找特定 MCP 工具的人
-- **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** · ⭐ 57.8k · Python  
+- **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** · ⭐ 57.9k · Python  
   精選的 Claude Code 資源清單：指令、工作流程、外掛等。  
   👤 **適合**：Claude Code 使用者
 - **[anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)** · ⭐ 47.0k · Python · Apache-2.0  
