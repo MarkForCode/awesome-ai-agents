@@ -1,12 +1,12 @@
 {
- "_updated": "2026-11-12T23:48+08:00",
+ "_updated": "2026-11-12T23:56+08:00",
  "aaif-goose/goose": {
   "archived": false,
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
   "full_name": "aaif-goose/goose",
   "language": "Rust",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T15:36:59Z",
+  "pushed_at": "2026-11-12T15:50:25Z",
   "stars": 56497
  },
  "activepieces/activepieces": {
@@ -16,7 +16,7 @@
   "language": "TypeScript",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-12T15:37:18Z",
-  "stars": 25498
+  "stars": 25499
  },
  "agentscope-ai/agentscope": {
   "archived": false,
@@ -25,7 +25,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T10:21:46Z",
-  "stars": 35870
+  "stars": 35871
  },
  "agno-agi/agno": {
   "archived": false,
@@ -34,7 +34,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T15:46:02Z",
-  "stars": 43177
+  "stars": 43178
  },
  "ahujasid/mcp-for-blender": {
   "archived": false,
@@ -43,7 +43,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T12:01:17Z",
-  "stars": 34148
+  "stars": 34152
  },
  "anthropics/claude-plugins-official": {
   "archived": false,
@@ -52,7 +52,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T15:11:10Z",
-  "stars": 47010
+  "stars": 47011
  },
  "assafelovic/gpt-researcher": {
   "archived": false,
@@ -70,7 +70,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T00:24:46Z",
-  "stars": 19046
+  "stars": 19047
  },
  "browser-use/browser-use": {
   "archived": false,
@@ -79,7 +79,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T02:11:28Z",
-  "stars": 120830
+  "stars": 120831
  },
  "bytedance/deer-flow": {
   "archived": false,
@@ -88,7 +88,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T14:30:49Z",
-  "stars": 85284
+  "stars": 85285
  },
  "charmbracelet/crush": {
   "archived": false,
@@ -96,7 +96,7 @@
   "full_name": "charmbracelet/crush",
   "language": "Go",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T15:36:04Z",
+  "pushed_at": "2026-11-12T15:55:02Z",
   "stars": 29062
  },
  "chromedevtools/chrome-devtools-mcp": {
@@ -106,7 +106,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T14:46:27Z",
-  "stars": 55155
+  "stars": 55156
  },
  "composiohq/composio": {
   "archived": false,
@@ -124,7 +124,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T14:24:10Z",
-  "stars": 60813
+  "stars": 60814
  },
  "czlonkowski/n8n-mcp": {
   "archived": false,
@@ -142,7 +142,7 @@
   "language": "Python",
   "license": "BSD-3-Clause",
   "pushed_at": "2026-11-11T19:16:10Z",
-  "stars": 101998
+  "stars": 102000
  },
  "dair-ai/prompt-engineering-guide": {
   "archived": false,
@@ -151,7 +151,7 @@
   "language": "MDX",
   "license": "MIT",
   "pushed_at": "2026-03-11T20:09:13Z",
-  "stars": 80013
+  "stars": 80014
  },
  "dayuanjiang/next-ai-draw-io": {
   "archived": false,
@@ -196,7 +196,7 @@
   "language": "TypeScript",
   "license": "AGPL-3.0",
   "pushed_at": "2026-11-12T15:30:58Z",
-  "stars": 201177
+  "stars": 201178
  },
  "foundationagents/metagpt": {
   "archived": false,
@@ -214,7 +214,16 @@
   "language": "Go",
   "license": "MIT",
   "pushed_at": "2026-11-12T09:42:56Z",
-  "stars": 34411
+  "stars": 34412
+ },
+ "gogoymh/auto-ontology-mcp": {
+  "archived": false,
+  "description": "NVIDIA Auto Ontology's semantic layer and a personal knowledge base as an MCP server for Claude, ChatGPT and other MCP clients. No LLM API key needed.",
+  "full_name": "gogoymh/auto-ontology-mcp",
+  "language": "Python",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-11T03:14:53Z",
+  "stars": 379
  },
  "google-gemini/gemini-cli": {
   "archived": false,
@@ -232,7 +241,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T08:19:15Z",
-  "stars": 22191
+  "stars": 22192
  },
  "headroomlabs-ai/headroom": {
   "archived": false,
@@ -241,7 +250,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T07:27:38Z",
-  "stars": 79453
+  "stars": 79454
  },
  "hesreallyhim/awesome-claude-code": {
   "archived": false,
@@ -250,7 +259,7 @@
   "language": "Python",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-12T15:05:55Z",
-  "stars": 57850
+  "stars": 57851
  },
  "huggingface/agents-course": {
   "archived": false,
@@ -259,7 +268,7 @@
   "language": "MDX",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-10T00:53:52Z",
-  "stars": 34815
+  "stars": 34816
  },
  "infiniflow/ragflow": {
   "archived": false,
@@ -268,7 +277,7 @@
   "language": "Go",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T13:09:01Z",
-  "stars": 94088
+  "stars": 94090
  },
  "kkkkhazix/agent-autoloop": {
   "archived": false,
@@ -277,7 +286,7 @@
   "language": "TypeScript",
   "license": "MIT",
   "pushed_at": "2026-11-12T11:13:24Z",
-  "stars": 4695
+  "stars": 4702
  },
  "langchain-ai/langchain": {
   "archived": false,
@@ -286,7 +295,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T14:08:06Z",
-  "stars": 149404
+  "stars": 149405
  },
  "langchain-ai/langgraph": {
   "archived": false,
@@ -295,7 +304,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T15:34:25Z",
-  "stars": 44861
+  "stars": 44864
  },
  "langgenius/dify": {
   "archived": false,
@@ -303,7 +312,7 @@
   "full_name": "langgenius/dify",
   "language": "Python",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T15:32:22Z",
+  "pushed_at": "2026-11-12T15:51:05Z",
   "stars": 161047
  },
  "letta-ai/letta": {
@@ -331,7 +340,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-06T16:53:07Z",
-  "stars": 68873
+  "stars": 68875
  },
  "microsoft/ai-agents-for-beginners": {
   "archived": false,
@@ -358,7 +367,7 @@
   "language": "Jupyter Notebook",
   "license": "MIT",
   "pushed_at": "2026-11-11T01:21:25Z",
-  "stars": 17643
+  "stars": 17644
  },
  "microsoft/playwright-mcp": {
   "archived": false,
@@ -367,7 +376,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-11T18:08:39Z",
-  "stars": 39555
+  "stars": 39556
  },
  "mintplex-labs/anything-llm": {
   "archived": false,
@@ -411,8 +420,8 @@
   "full_name": "n8n-io/n8n",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T15:45:53Z",
-  "stars": 210300
+  "pushed_at": "2026-11-12T15:54:12Z",
+  "stars": 210301
  },
  "nirdiamant/agents-towards-production": {
   "archived": false,
@@ -439,7 +448,7 @@
   "language": "Svelte",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-12T14:24:23Z",
-  "stars": 158472
+  "stars": 158475
  },
  "openinterpreter/openinterpreter": {
   "archived": false,
@@ -447,8 +456,8 @@
   "full_name": "openinterpreter/openinterpreter",
   "language": "Rust",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T15:40:03Z",
-  "stars": 68875
+  "pushed_at": "2026-11-12T15:55:31Z",
+  "stars": 68874
  },
  "opensandbox-group/opensandbox": {
   "archived": false,
@@ -483,8 +492,8 @@
   "full_name": "pydantic/pydantic-ai",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-12T15:38:05Z",
-  "stars": 21169
+  "pushed_at": "2026-11-12T15:51:04Z",
+  "stars": 21170
  },
  "qwenlm/qwen-code": {
   "archived": false,
@@ -492,8 +501,8 @@
   "full_name": "QwenLM/qwen-code",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T15:46:08Z",
-  "stars": 29640
+  "pushed_at": "2026-11-12T15:53:36Z",
+  "stars": 29641
  },
  "shanselman/sandbox-mcp": {
   "archived": false,
@@ -528,8 +537,8 @@
   "full_name": "stablyai/orca",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T15:46:06Z",
-  "stars": 123178
+  "pushed_at": "2026-11-12T15:54:13Z",
+  "stars": 123187
  },
  "thedotmack/claude-mem": {
   "archived": false,
@@ -538,7 +547,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T08:04:02Z",
-  "stars": 116455
+  "stars": 116456
  },
  "trycua/cua": {
   "archived": false,
@@ -546,8 +555,8 @@
   "full_name": "trycua/cua",
   "language": "Rust",
   "license": "MIT",
-  "pushed_at": "2026-11-12T15:46:29Z",
-  "stars": 32244
+  "pushed_at": "2026-11-12T15:53:34Z",
+  "stars": 32246
  },
  "unclecode/crawl4ai": {
   "archived": false,
@@ -574,7 +583,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T11:21:04Z",
-  "stars": 40396
+  "stars": 40397
  },
  "vectorize-io/hindsight": {
   "archived": false,
@@ -583,7 +592,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T15:19:16Z",
-  "stars": 60655
+  "stars": 60656
  },
  "voltagent/awesome-agent-skills": {
   "archived": false,
@@ -592,7 +601,16 @@
   "language": null,
   "license": "MIT",
   "pushed_at": "2026-11-05T10:43:36Z",
-  "stars": 37114
+  "stars": 37115
+ },
+ "vostride/agent-qa": {
+  "archived": false,
+  "description": "Open-source self-improving QA agent for software teams. A test harness with memory. Write tests in natural language for web and mobile. agent-qa learns from every run, adapts to UI changes, and catches regressions before you ship.",
+  "full_name": "vostride/agent-qa",
+  "language": "TypeScript",
+  "license": "NOASSERTION",
+  "pushed_at": "2026-11-12T15:10:15Z",
+  "stars": 856
  },
  "yeachan-heo/oh-my-claudecode": {
   "archived": false,
@@ -601,6 +619,6 @@
   "language": "TypeScript",
   "license": "MIT",
   "pushed_at": "2026-11-12T15:37:11Z",
-  "stars": 40790
+  "stars": 40789
  }
 }

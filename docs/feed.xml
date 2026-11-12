@@ -7,6 +7,16 @@
 &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/DIYgod/pinky&quot;&gt;DIYgod/pinky&lt;/a&gt;&lt;/strong&gt; · 瀏覽器與電腦操作&lt;br&gt;透過 MCP 讓 Claude Code、Codex、Cursor 操作真的手機，Android 和 iPhone 都支援。付款、轉帳預設要你按允許，銀行與密碼管理 App 預設對 Agent 隱藏，而且這些規則由 Pinky 的閘道執行，不是靠提示詞要求 Agent 自律。目前仍是 pre-alpha。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/shanselman/sandbox-mcp&quot;&gt;shanselman/sandbox-mcp&lt;/a&gt;&lt;/strong&gt; · MCP 伺服器與 SDK&lt;br&gt;利用 Windows 內建的 Windows Sandbox，讓 Agent 在全新的 Windows 11 裡安裝、點擊、測試你的桌面程式，抓出「在我電腦上可以跑」的相依問題，最後連機器一起丟掉。CLI 可以單獨使用，MCP 介面是選配。需要 Windows Pro 以上版本。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3&gt;讀者投稿&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/vostride/agent-qa&quot;&gt;vostride/agent-qa&lt;/a&gt;&lt;/strong&gt; · 瀏覽器與電腦操作&lt;br&gt;由專案維護者投稿。用自然語言描述使用流程，Agent 會在網頁、Android 或 iOS 上實際操作測試，失敗時把出錯的步驟和截圖放在一起，學到的經驗存成 repo 裡可審查的檔案。注意它採用 FSL-1.1-ALv2 授權：原始碼公開，但兩年內限制競爭用途，不屬於 OSI 認可的開源授權。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有想推薦的專案？歡迎到 &lt;a href=&quot;https://github.com/markforcode/awesome-ai-agents/issues&quot;&gt;GitHub&lt;/a&gt; 開 issue。&lt;/p&gt;</description></item><item><title>2026-11-11 每日 AI Agent 精選</title><link>https://markforcode.github.io/awesome-ai-agents/daily/2026-11-11.html</link><guid>https://markforcode.github.io/awesome-ai-agents/daily/2026-11-11.html</guid><pubDate>Wed, 11 Nov 2026 09:00:00 +0800</pubDate><description>&lt;h2&gt;2026-11-11 讓 Agent 查資料庫，別再「SQL 能跑但答案錯」&lt;/h2&gt;
+&lt;blockquote&gt;這天原本選了 4 個專案，其中 3 個（pinky、devvm、sandbox-mcp）已併入 &lt;a href=&quot;https://markforcode.github.io/awesome-ai-agents/daily/2026-11-12.html&quot;&gt;11-12 的更新&lt;/a&gt;，這裡只留下另一個：處理 Agent 查資料庫時最怕的「查詢跑得動、數字卻是錯的」。&lt;/blockquote&gt;
+&lt;h3&gt;今日新收錄&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/gogoymh/auto-ontology-mcp&quot;&gt;gogoymh/auto-ontology-mcp&lt;/a&gt;&lt;/strong&gt; · 記憶與上下文&lt;br&gt;把 NVIDIA Auto Ontology 的語意層做成 MCP 伺服器，理解與撰寫 SQL 交給你本來在用的模型，伺服器負責驗證並以唯讀方式執行。另外也能把收據、筆記整理成可查詢的個人知識庫，並匯出成 Obsidian 筆記庫。不需要另外架模型端點或設定 API key。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;有想推薦的專案？歡迎到 &lt;a href=&quot;https://github.com/markforcode/awesome-ai-agents/issues&quot;&gt;GitHub&lt;/a&gt; 開 issue。&lt;/p&gt;</description></item><item><title>2026-11-10 每日 AI Agent 精選</title><link>https://markforcode.github.io/awesome-ai-agents/daily/2026-11-10.html</link><guid>https://markforcode.github.io/awesome-ai-agents/daily/2026-11-10.html</guid><pubDate>Tue, 10 Nov 2026 09:00:00 +0800</pubDate><description>&lt;h2&gt;2026-11-10 創刊號：AI Agent 精選開張&lt;/h2&gt;
 &lt;blockquote&gt;這份清單每天整理值得關注的 AI Agent 與 MCP 開源專案，用繁體中文告訴你它是什麼、適合誰。第一天先收錄 63 個基礎專案，以下是編輯精選的 5 個入門起點。&lt;/blockquote&gt;
 &lt;h3&gt;今日精選&lt;/h3&gt;

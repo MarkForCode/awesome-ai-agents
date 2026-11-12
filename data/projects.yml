@@ -164,6 +164,11 @@ categories:
         for: 想讓 Agent 代操手機 App、又要保留控制權的人
         note: 仍在 pre-alpha 階段
         added: 2026-11-12
+      - repo: vostride/agent-qa
+        summary: 用自然語言描述使用流程，由 Agent 在網頁、Android 或 iOS 上實際操作測試，失敗時留下對應步驟的截圖；可從 CLI、儀表板或透過 MCP 從程式 Agent 呼叫，並把測試中學到的經驗存成 repo 裡可審查的檔案。
+        for: 想讓程式 Agent 跑端對端測試的開發者與 QA 工程師
+        note: FSL-1.1-ALv2 授權（原始碼公開，兩年後轉為 Apache-2.0，期間限制競爭用途），不是 OSI 認可的開源授權；需要 Node.js 24 以上，模型費用另計
+        added: 2026-11-12
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -239,6 +244,10 @@ categories:
         summary: 在工具輸出、日誌、檔案送進 LLM 前先壓縮，有函式庫、代理伺服器和 MCP 三種用法。
         for: 想省 token 費用的人
         added: 2026-11-10
+      - repo: gogoymh/auto-ontology-mcp
+        summary: 把 NVIDIA Auto Ontology 的語意層包成 MCP 伺服器，由你的 Agent 建立資料庫的業務詞彙並寫出經過檢查的唯讀 SQL，也能當個人知識庫用。
+        for: 想用自然語言查公司資料庫，或想建立可查詢個人知識庫的人
+        added: 2026-11-11
 
   - id: scraping
     name: 網頁資料擷取

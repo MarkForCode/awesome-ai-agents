@@ -2,13 +2,14 @@
 
 > 精選 AI Agent、MCP 與相關開源工具，每天更新，附繁體中文導讀。
 
-目前收錄 **67** 個專案 · 數據更新：2026-11-12 · [網站版](https://markforcode.github.io/awesome-ai-agents/) · [RSS](https://markforcode.github.io/awesome-ai-agents/feed.xml)
+目前收錄 **69** 個專案 · 數據更新：2026-11-12 · [網站版](https://markforcode.github.io/awesome-ai-agents/) · [RSS](https://markforcode.github.io/awesome-ai-agents/feed.xml)
 
 每個專案都附「一句話介紹」和「適合誰」。⭐ 星星數、授權與更新狀態每天由 GitHub API 自動同步。
 
 ## 🆕 最近更新
 
 - [2026-11-12](daily/2026-11-12.md)
+- [2026-11-11](daily/2026-11-11.md)
 - [2026-11-10](daily/2026-11-10.md)
 
 ## 目錄
@@ -16,9 +17,9 @@
 - [入門學習](#learn)（7）
 - [Agent 開發框架](#frameworks)（11）
 - [程式開發 Agent](#coding)（9）
-- [瀏覽器與電腦操作](#browser)（7）
+- [瀏覽器與電腦操作](#browser)（8）
 - [MCP 伺服器與 SDK](#mcp)（11）
-- [記憶與上下文](#memory)（5）
+- [記憶與上下文](#memory)（6）
 - [網頁資料擷取](#scraping)（3）
 - [無程式碼平台與自架介面](#platforms)（7）
 - [研究與通用 Agent](#research)（3）
@@ -153,6 +154,9 @@
 - **[DIYgod/pinky](https://github.com/DIYgod/pinky)** · ⭐ 2.0k · Go · Apache-2.0  
   透過 MCP 讓 Agent 操作真實的 iPhone 或 Android 手機，付款等高風險步驟要你在電腦上按允許才會執行，並保留每一步的截圖與錄影。  
   👤 **適合**：想讓 Agent 代操手機 App、又要保留控制權的人　⚠️ 仍在 pre-alpha 階段
+- **[vostride/agent-qa](https://github.com/vostride/agent-qa)** · ⭐ 856 · TypeScript  
+  用自然語言描述使用流程，由 Agent 在網頁、Android 或 iOS 上實際操作測試，失敗時留下對應步驟的截圖；可從 CLI、儀表板或透過 MCP 從程式 Agent 呼叫，並把測試中學到的經驗存成 repo 裡可審查的檔案。  
+  👤 **適合**：想讓程式 Agent 跑端對端測試的開發者與 QA 工程師　⚠️ FSL-1.1-ALv2 授權（原始碼公開，兩年後轉為 Apache-2.0，期間限制競爭用途），不是 OSI 認可的開源授權；需要 Node.js 24 以上，模型費用另計
 
 <a id="mcp"></a>
 
@@ -172,7 +176,7 @@
 - **[github/github-mcp-server](https://github.com/github/github-mcp-server)** · ⭐ 34.4k · Go · MIT  
   GitHub 官方 MCP server，讓 Agent 讀寫 issue、PR、程式碼與 Actions。  
   👤 **適合**：想讓 Agent 幫忙管理 GitHub 的人
-- **[ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender)** · ⭐ 34.1k · Python · MIT  
+- **[ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender)** · ⭐ 34.2k · Python · MIT  
   用自然語言操作 Blender 建 3D 模型（社群外掛，非官方）。  
   👤 **適合**：3D 創作者
 - **[oraios/serena](https://github.com/oraios/serena)** · ⭐ 31.3k · Python  
@@ -215,6 +219,9 @@
 - **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** · ⭐ 40.4k · Python · MIT  
   不用向量資料庫的 RAG，把文件建成目錄樹，讓 LLM 像人一樣翻目錄找答案。  
   👤 **適合**：處理長篇報告、財報、法規文件的人
+- **[gogoymh/auto-ontology-mcp](https://github.com/gogoymh/auto-ontology-mcp)** · ⭐ 379 · Python · Apache-2.0  
+  把 NVIDIA Auto Ontology 的語意層包成 MCP 伺服器，由你的 Agent 建立資料庫的業務詞彙並寫出經過檢查的唯讀 SQL，也能當個人知識庫用。  
+  👤 **適合**：想用自然語言查公司資料庫，或想建立可查詢個人知識庫的人
 
 <a id="scraping"></a>
 
