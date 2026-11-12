@@ -1,13 +1,13 @@
 {
- "_updated": "2026-11-12T15:06+08:00",
+ "_updated": "2026-11-12T23:45+08:00",
  "aaif-goose/goose": {
   "archived": false,
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
   "full_name": "aaif-goose/goose",
   "language": "Rust",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T07:05:16Z",
-  "stars": 56476
+  "pushed_at": "2026-11-12T15:36:59Z",
+  "stars": 56496
  },
  "activepieces/activepieces": {
   "archived": false,
@@ -15,8 +15,8 @@
   "full_name": "activepieces/activepieces",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T06:33:18Z",
-  "stars": 25489
+  "pushed_at": "2026-11-12T15:37:18Z",
+  "stars": 25498
  },
  "agentscope-ai/agentscope": {
   "archived": false,
@@ -24,8 +24,8 @@
   "full_name": "agentscope-ai/agentscope",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T06:25:12Z",
-  "stars": 35842
+  "pushed_at": "2026-11-12T10:21:46Z",
+  "stars": 35869
  },
  "agno-agi/agno": {
   "archived": false,
@@ -33,8 +33,8 @@
   "full_name": "agno-agi/agno",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T01:46:30Z",
-  "stars": 43164
+  "pushed_at": "2026-11-12T15:33:18Z",
+  "stars": 43177
  },
  "ahujasid/mcp-for-blender": {
   "archived": false,
@@ -42,8 +42,8 @@
   "full_name": "ahujasid/mcp-for-blender",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-04T13:04:08Z",
-  "stars": 34092
+  "pushed_at": "2026-11-12T12:01:17Z",
+  "stars": 34148
  },
  "anthropics/claude-plugins-official": {
   "archived": false,
@@ -51,8 +51,8 @@
   "full_name": "anthropics/claude-plugins-official",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T06:06:31Z",
-  "stars": 46953
+  "pushed_at": "2026-11-12T15:11:10Z",
+  "stars": 47010
  },
  "assafelovic/gpt-researcher": {
   "archived": false,
@@ -60,8 +60,8 @@
   "full_name": "assafelovic/gpt-researcher",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-09T15:17:21Z",
-  "stars": 30638
+  "pushed_at": "2026-11-12T12:45:58Z",
+  "stars": 30648
  },
  "browser-use/browser-harness": {
   "archived": false,
@@ -70,7 +70,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T00:24:46Z",
-  "stars": 19038
+  "stars": 19046
  },
  "browser-use/browser-use": {
   "archived": false,
@@ -79,7 +79,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T02:11:28Z",
-  "stars": 120780
+  "stars": 120829
  },
  "bytedance/deer-flow": {
   "archived": false,
@@ -87,8 +87,8 @@
   "full_name": "bytedance/deer-flow",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-12T06:39:25Z",
-  "stars": 85264
+  "pushed_at": "2026-11-12T14:30:49Z",
+  "stars": 85285
  },
  "charmbracelet/crush": {
   "archived": false,
@@ -96,8 +96,8 @@
   "full_name": "charmbracelet/crush",
   "language": "Go",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T03:53:18Z",
-  "stars": 29056
+  "pushed_at": "2026-11-12T15:36:04Z",
+  "stars": 29062
  },
  "chromedevtools/chrome-devtools-mcp": {
   "archived": false,
@@ -105,8 +105,8 @@
   "full_name": "ChromeDevTools/chrome-devtools-mcp",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T07:06:01Z",
-  "stars": 55127
+  "pushed_at": "2026-11-12T14:46:27Z",
+  "stars": 55155
  },
  "composiohq/composio": {
   "archived": false,
@@ -114,8 +114,8 @@
   "full_name": "ComposioHQ/composio",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T06:10:24Z",
-  "stars": 31040
+  "pushed_at": "2026-11-12T15:44:29Z",
+  "stars": 31046
  },
  "crewaiinc/crewai": {
   "archived": false,
@@ -123,8 +123,8 @@
   "full_name": "crewAIInc/crewAI",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-12T05:05:13Z",
-  "stars": 60797
+  "pushed_at": "2026-11-12T14:24:10Z",
+  "stars": 60813
  },
  "czlonkowski/n8n-mcp": {
   "archived": false,
@@ -133,7 +133,7 @@
   "language": "TypeScript",
   "license": "MIT",
   "pushed_at": "2026-11-11T21:15:59Z",
-  "stars": 23248
+  "stars": 23250
  },
  "d4vinci/scrapling": {
   "archived": false,
@@ -142,7 +142,7 @@
   "language": "Python",
   "license": "BSD-3-Clause",
   "pushed_at": "2026-11-11T19:16:10Z",
-  "stars": 101788
+  "stars": 101997
  },
  "dair-ai/prompt-engineering-guide": {
   "archived": false,
@@ -151,7 +151,7 @@
   "language": "MDX",
   "license": "MIT",
   "pushed_at": "2026-03-11T20:09:13Z",
-  "stars": 79995
+  "stars": 80013
  },
  "dayuanjiang/next-ai-draw-io": {
   "archived": false,
@@ -160,7 +160,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-11T22:31:24Z",
-  "stars": 36893
+  "stars": 36911
  },
  "deepset-ai/haystack": {
   "archived": false,
@@ -168,8 +168,26 @@
   "full_name": "deepset-ai/haystack",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T02:11:30Z",
-  "stars": 26993
+  "pushed_at": "2026-11-12T15:25:19Z",
+  "stars": 26997
+ },
+ "devvmhq/devvm": {
+  "archived": false,
+  "description": "One VM for every project. An isolated sandbox with your project’s toolchain, ready for you or a coding agent to start coding",
+  "full_name": "devvmhq/devvm",
+  "language": "Go",
+  "license": "MIT",
+  "pushed_at": "2026-11-12T14:53:11Z",
+  "stars": 588
+ },
+ "diygod/pinky": {
+  "archived": false,
+  "description": "Let AI agents use your phone, with you in the loop.",
+  "full_name": "DIYgod/pinky",
+  "language": "Go",
+  "license": "Apache-2.0",
+  "pushed_at": "2026-11-12T15:44:11Z",
+  "stars": 1981
  },
  "firecrawl/firecrawl": {
   "archived": false,
@@ -177,8 +195,8 @@
   "full_name": "firecrawl/firecrawl",
   "language": "TypeScript",
   "license": "AGPL-3.0",
-  "pushed_at": "2026-11-12T06:16:51Z",
-  "stars": 201041
+  "pushed_at": "2026-11-12T15:30:58Z",
+  "stars": 201176
  },
  "foundationagents/metagpt": {
   "archived": false,
@@ -187,7 +205,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-01-21T10:12:33Z",
-  "stars": 71259
+  "stars": 71261
  },
  "github/github-mcp-server": {
   "archived": false,
@@ -195,8 +213,8 @@
   "full_name": "github/github-mcp-server",
   "language": "Go",
   "license": "MIT",
-  "pushed_at": "2026-11-12T05:46:16Z",
-  "stars": 34398
+  "pushed_at": "2026-11-12T09:42:56Z",
+  "stars": 34411
  },
  "google-gemini/gemini-cli": {
   "archived": false,
@@ -205,7 +223,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T01:10:19Z",
-  "stars": 108788
+  "stars": 108797
  },
  "google/adk-python": {
   "archived": false,
@@ -213,8 +231,8 @@
   "full_name": "google/adk-python",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-11T22:59:03Z",
-  "stars": 22186
+  "pushed_at": "2026-11-12T08:19:15Z",
+  "stars": 22191
  },
  "headroomlabs-ai/headroom": {
   "archived": false,
@@ -222,8 +240,8 @@
   "full_name": "headroomlabs-ai/headroom",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T05:06:50Z",
-  "stars": 79407
+  "pushed_at": "2026-11-12T07:27:38Z",
+  "stars": 79452
  },
  "hesreallyhim/awesome-claude-code": {
   "archived": false,
@@ -231,8 +249,8 @@
   "full_name": "hesreallyhim/awesome-claude-code",
   "language": "Python",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T06:11:06Z",
-  "stars": 57816
+  "pushed_at": "2026-11-12T15:05:55Z",
+  "stars": 57848
  },
  "huggingface/agents-course": {
   "archived": false,
@@ -241,7 +259,7 @@
   "language": "MDX",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-10T00:53:52Z",
-  "stars": 34794
+  "stars": 34815
  },
  "infiniflow/ragflow": {
   "archived": false,
@@ -249,8 +267,17 @@
   "full_name": "infiniflow/ragflow",
   "language": "Go",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T06:19:48Z",
-  "stars": 94066
+  "pushed_at": "2026-11-12T13:09:01Z",
+  "stars": 94088
+ },
+ "kkkkhazix/agent-autoloop": {
+  "archived": false,
+  "description": "让你的命令行 Agent 在后台自己接活、自己跟进到底；平时不烦你，遇到拿不准的事才发卡片找你拍板。",
+  "full_name": "KKKKhazix/agent-autoloop",
+  "language": "TypeScript",
+  "license": "MIT",
+  "pushed_at": "2026-11-12T11:13:24Z",
+  "stars": 4694
  },
  "langchain-ai/langchain": {
   "archived": false,
@@ -258,8 +285,8 @@
   "full_name": "langchain-ai/langchain",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-11T16:14:23Z",
-  "stars": 149387
+  "pushed_at": "2026-11-12T14:08:06Z",
+  "stars": 149404
  },
  "langchain-ai/langgraph": {
   "archived": false,
@@ -267,8 +294,8 @@
   "full_name": "langchain-ai/langgraph",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-12T01:43:56Z",
-  "stars": 44831
+  "pushed_at": "2026-11-12T15:34:25Z",
+  "stars": 44861
  },
  "langgenius/dify": {
   "archived": false,
@@ -276,8 +303,8 @@
   "full_name": "langgenius/dify",
   "language": "Python",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T07:06:09Z",
-  "stars": 161006
+  "pushed_at": "2026-11-12T15:32:22Z",
+  "stars": 161047
  },
  "letta-ai/letta": {
   "archived": false,
@@ -286,7 +313,7 @@
   "language": null,
   "license": "Apache-2.0",
   "pushed_at": "2026-10-18T22:28:04Z",
-  "stars": 25420
+  "stars": 25426
  },
  "librechat-ai/librechat": {
   "archived": false,
@@ -294,8 +321,8 @@
   "full_name": "LibreChat-AI/LibreChat",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T04:54:17Z",
-  "stars": 47017
+  "pushed_at": "2026-11-12T15:44:24Z",
+  "stars": 47045
  },
  "mem0ai/mem0": {
   "archived": false,
@@ -304,7 +331,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-06T16:53:07Z",
-  "stars": 68842
+  "stars": 68873
  },
  "microsoft/ai-agents-for-beginners": {
   "archived": false,
@@ -313,7 +340,7 @@
   "language": "Jupyter Notebook",
   "license": "MIT",
   "pushed_at": "2026-11-07T04:51:12Z",
-  "stars": 79453
+  "stars": 79500
  },
  "microsoft/autogen": {
   "archived": false,
@@ -321,8 +348,8 @@
   "full_name": "microsoft/autogen",
   "language": "Python",
   "license": "CC-BY-4.0",
-  "pushed_at": "2026-10-28T14:45:27Z",
-  "stars": 61788
+  "pushed_at": "2026-11-12T10:19:36Z",
+  "stars": 61795
  },
  "microsoft/mcp-for-beginners": {
   "archived": false,
@@ -331,7 +358,7 @@
   "language": "Jupyter Notebook",
   "license": "MIT",
   "pushed_at": "2026-11-11T01:21:25Z",
-  "stars": 17641
+  "stars": 17643
  },
  "microsoft/playwright-mcp": {
   "archived": false,
@@ -340,7 +367,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-11T18:08:39Z",
-  "stars": 39531
+  "stars": 39553
  },
  "mintplex-labs/anything-llm": {
   "archived": false,
@@ -349,7 +376,7 @@
   "language": "JavaScript",
   "license": "MIT",
   "pushed_at": "2026-11-12T01:07:17Z",
-  "stars": 68202
+  "stars": 68214
  },
  "modelcontextprotocol/python-sdk": {
   "archived": false,
@@ -358,7 +385,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-05T13:38:56Z",
-  "stars": 24835
+  "stars": 24840
  },
  "modelcontextprotocol/servers": {
   "archived": false,
@@ -367,7 +394,7 @@
   "language": "TypeScript",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-12T05:37:52Z",
-  "stars": 91938
+  "stars": 91949
  },
  "modelcontextprotocol/typescript-sdk": {
   "archived": false,
@@ -376,7 +403,7 @@
   "language": "TypeScript",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-10T14:38:41Z",
-  "stars": 13749
+  "stars": 13751
  },
  "n8n-io/n8n": {
   "archived": false,
@@ -384,8 +411,8 @@
   "full_name": "n8n-io/n8n",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T07:05:43Z",
-  "stars": 210239
+  "pushed_at": "2026-11-12T15:44:03Z",
+  "stars": 210300
  },
  "nirdiamant/agents-towards-production": {
   "archived": false,
@@ -394,7 +421,7 @@
   "language": "Jupyter Notebook",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-02T00:45:51Z",
-  "stars": 21883
+  "stars": 21886
  },
  "nirdiamant/genai_agents": {
   "archived": false,
@@ -403,7 +430,7 @@
   "language": "Jupyter Notebook",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-02T00:45:58Z",
-  "stars": 24938
+  "stars": 24943
  },
  "open-webui/open-webui": {
   "archived": false,
@@ -411,8 +438,8 @@
   "full_name": "open-webui/open-webui",
   "language": "Svelte",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T04:39:37Z",
-  "stars": 158443
+  "pushed_at": "2026-11-12T14:24:23Z",
+  "stars": 158472
  },
  "openinterpreter/openinterpreter": {
   "archived": false,
@@ -420,8 +447,8 @@
   "full_name": "openinterpreter/openinterpreter",
   "language": "Rust",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-11T03:03:03Z",
-  "stars": 68869
+  "pushed_at": "2026-11-12T15:40:03Z",
+  "stars": 68875
  },
  "opensandbox-group/opensandbox": {
   "archived": false,
@@ -429,8 +456,8 @@
   "full_name": "opensandbox-group/OpenSandbox",
   "language": "Go",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T06:32:36Z",
-  "stars": 17225
+  "pushed_at": "2026-11-12T14:06:18Z",
+  "stars": 17245
  },
  "oraios/serena": {
   "archived": false,
@@ -439,7 +466,7 @@
   "language": "Python",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-09T17:39:00Z",
-  "stars": 31308
+  "stars": 31323
  },
  "punkpeye/awesome-mcp-servers": {
   "archived": false,
@@ -448,7 +475,7 @@
   "language": null,
   "license": "MIT",
   "pushed_at": "2026-11-06T17:59:03Z",
-  "stars": 97630
+  "stars": 97650
  },
  "pydantic/pydantic-ai": {
   "archived": false,
@@ -456,8 +483,8 @@
   "full_name": "pydantic/pydantic-ai",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-12T06:28:53Z",
-  "stars": 21155
+  "pushed_at": "2026-11-12T15:38:05Z",
+  "stars": 21169
  },
  "qwenlm/qwen-code": {
   "archived": false,
@@ -465,8 +492,17 @@
   "full_name": "QwenLM/qwen-code",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T07:05:27Z",
-  "stars": 29495
+  "pushed_at": "2026-11-12T15:39:15Z",
+  "stars": 29638
+ },
+ "shanselman/sandbox-mcp": {
+  "archived": false,
+  "description": "Fresh, throwaway Windows machines for testing your apps: an MCP server and CLI that automate Windows Sandbox",
+  "full_name": "shanselman/sandbox-mcp",
+  "language": "JavaScript",
+  "license": "MIT",
+  "pushed_at": "2026-11-12T07:54:12Z",
+  "stars": 417
  },
  "shareai-lab/learn-claude-code": {
   "archived": false,
@@ -475,7 +511,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-10-27T04:47:00Z",
-  "stars": 80296
+  "stars": 80333
  },
  "skyvern-ai/skyvern": {
   "archived": false,
@@ -483,8 +519,8 @@
   "full_name": "Skyvern-AI/skyvern",
   "language": "Python",
   "license": "AGPL-3.0",
-  "pushed_at": "2026-11-12T06:46:57Z",
-  "stars": 23390
+  "pushed_at": "2026-11-12T11:29:46Z",
+  "stars": 23396
  },
  "stablyai/orca": {
   "archived": false,
@@ -492,8 +528,8 @@
   "full_name": "stablyai/orca",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T07:05:02Z",
-  "stars": 122671
+  "pushed_at": "2026-11-12T15:45:08Z",
+  "stars": 123176
  },
  "thedotmack/claude-mem": {
   "archived": false,
@@ -501,8 +537,8 @@
   "full_name": "thedotmack/claude-mem",
   "language": "TypeScript",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-12T07:06:13Z",
-  "stars": 116330
+  "pushed_at": "2026-11-12T08:04:02Z",
+  "stars": 116455
  },
  "trycua/cua": {
   "archived": false,
@@ -510,8 +546,8 @@
   "full_name": "trycua/cua",
   "language": "Rust",
   "license": "MIT",
-  "pushed_at": "2026-11-12T07:05:59Z",
-  "stars": 32228
+  "pushed_at": "2026-11-12T15:43:20Z",
+  "stars": 32244
  },
  "unclecode/crawl4ai": {
   "archived": false,
@@ -519,8 +555,8 @@
   "full_name": "unclecode/crawl4ai",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-10T12:30:15Z",
-  "stars": 87252
+  "pushed_at": "2026-11-12T11:40:21Z",
+  "stars": 87270
  },
  "upstash/context7": {
   "archived": false,
@@ -528,8 +564,8 @@
   "full_name": "upstash/context7",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T02:03:13Z",
-  "stars": 64644
+  "pushed_at": "2026-11-12T12:50:44Z",
+  "stars": 64681
  },
  "vectifyai/pageindex": {
   "archived": false,
@@ -537,8 +573,8 @@
   "full_name": "VectifyAI/PageIndex",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-12T07:00:37Z",
-  "stars": 40385
+  "pushed_at": "2026-11-12T11:21:04Z",
+  "stars": 40396
  },
  "vectorize-io/hindsight": {
   "archived": false,
@@ -546,8 +582,8 @@
   "full_name": "vectorize-io/hindsight",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-11T21:14:21Z",
-  "stars": 60565
+  "pushed_at": "2026-11-12T15:19:16Z",
+  "stars": 60654
  },
  "voltagent/awesome-agent-skills": {
   "archived": false,
@@ -556,7 +592,7 @@
   "language": null,
   "license": "MIT",
   "pushed_at": "2026-11-05T10:43:36Z",
-  "stars": 37106
+  "stars": 37114
  },
  "yeachan-heo/oh-my-claudecode": {
   "archived": false,
@@ -564,7 +600,7 @@
   "full_name": "Yeachan-Heo/oh-my-claudecode",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T06:34:17Z",
-  "stars": 40778
+  "pushed_at": "2026-11-12T15:37:11Z",
+  "stars": 40790
  }
 }

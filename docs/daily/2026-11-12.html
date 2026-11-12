@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-12 每日 AI Agent 精選</title><meta name="description" content="精選 AI Agent、MCP 與相關開源工具，每天更新，附繁體中文導讀。">
+<link rel="alternate" type="application/rss+xml" title="Awesome AI Agents 繁中" href="https://markforcode.github.io/awesome-ai-agents/feed.xml">
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a65;--line:#e6e3dc;--acc:#0b6e4f;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ecebe6;--mut:#9b9a94;--line:#2c2b28;--acc:#5ccf9f;--card:#1c1c1a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:40px 20px 80px}
+header h1{font-size:2rem;margin:0 0 6px;letter-spacing:-.01em}header p{color:var(--mut);margin:0}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px}
+nav a{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.9rem;text-decoration:none;color:var(--fg)}
+nav a:hover{border-color:var(--acc);color:var(--acc)}
+h2{margin:48px 0 4px;font-size:1.35rem}h2+p.desc{color:var(--mut);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+.card a.name{font-weight:600;color:var(--acc);text-decoration:none}.meta{color:var(--mut);font-size:.85rem;margin-left:6px}
+.card p{margin:6px 0 0}.for{color:var(--mut);font-size:.92rem}.note{color:#b4590a;font-size:.92rem}
+a{color:var(--acc)}.daily li{margin:6px 0}footer{margin-top:60px;color:var(--mut);font-size:.85rem}
+input#q{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font-size:1rem;margin-top:16px}
+</style></head><body><div class="wrap"><p><a href="../">← 回到清單</a></p><h2>2026-11-12 讓 Agent 在沙盒和手機上做事，人只在關鍵時刻出手</h2>
+<blockquote>這幾天新冒出來的專案有個共同點：不再只追求 Agent 能做多少事，而是設計好「哪裡讓它放手、哪裡要人確認」。今天收錄 4 個，兩個是隔離環境，一個管理背景任務，一個讓 Agent 操作手機。</blockquote>
+<h3>今日新收錄</h3>
+<ul>
+<li><strong><a href="https://github.com/KKKKhazix/agent-autoloop">KKKKhazix/agent-autoloop</a></strong> · 程式開發 Agent<br>用一份 <code>rules.json</code> 設定什麼事件交給哪個命令列 Agent、在哪個目錄做，例如每天早上寫早報、有新 issue 就處理。Agent 遇到刪資料、花錢這類拿不準的事會退出並推卡片給你，等你回覆期間不占程序也不花 token。跟 Orca 這類同時指揮多個 Agent 的工具不同，它的重點是無人值守。</li>
+<li><strong><a href="https://github.com/devvmhq/devvm">devvmhq/devvm</a></strong> · 程式開發 Agent<br>在專案資料夾執行 <code>devvm</code>，就會開一台只掛載該資料夾的虛擬機，工具鏈自動偵測，GitHub、Claude Code 的 token 留在本機。也能用 <code>--clone</code> 讓 Agent 在自己的副本工作，之後再 fetch 回來審查。比起 Docker 容器，隔離更徹底，適合想開放較多權限給 Agent 的情境。</li>
+<li><strong><a href="https://github.com/DIYgod/pinky">DIYgod/pinky</a></strong> · 瀏覽器與電腦操作<br>透過 MCP 讓 Claude Code、Codex、Cursor 操作真的手機，Android 和 iPhone 都支援。付款、轉帳預設要你按允許，銀行與密碼管理 App 預設對 Agent 隱藏，而且這些規則由 Pinky 的閘道執行，不是靠提示詞要求 Agent 自律。目前仍是 pre-alpha。</li>
+<li><strong><a href="https://github.com/shanselman/sandbox-mcp">shanselman/sandbox-mcp</a></strong> · MCP 伺服器與 SDK<br>利用 Windows 內建的 Windows Sandbox，讓 Agent 在全新的 Windows 11 裡安裝、點擊、測試你的桌面程式，抓出「在我電腦上可以跑」的相依問題，最後連機器一起丟掉。CLI 可以單獨使用，MCP 介面是選配。需要 Windows Pro 以上版本。</li>
+</ul>
+<p>有想推薦的專案？歡迎到 <a href="https://github.com/markforcode/awesome-ai-agents/issues">GitHub</a> 開 issue。</p>
+<footer>由 <a href="https://github.com/markforcode/awesome-ai-agents">markforcode/awesome-ai-agents</a> 自動產生 · 內容以 CC0 釋出</footer></div></body></html>
