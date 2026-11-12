@@ -1,5 +1,5 @@
 {
- "_updated": "2026-11-12T23:56+08:00",
+ "_updated": "2026-11-12T23:58+08:00",
  "aaif-goose/goose": {
   "archived": false,
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
@@ -52,7 +52,7 @@
   "language": "Python",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T15:11:10Z",
-  "stars": 47011
+  "stars": 47012
  },
  "assafelovic/gpt-researcher": {
   "archived": false,
@@ -106,7 +106,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T14:46:27Z",
-  "stars": 55156
+  "stars": 55157
  },
  "composiohq/composio": {
   "archived": false,
@@ -196,7 +196,7 @@
   "language": "TypeScript",
   "license": "AGPL-3.0",
   "pushed_at": "2026-11-12T15:30:58Z",
-  "stars": 201178
+  "stars": 201179
  },
  "foundationagents/metagpt": {
   "archived": false,
@@ -205,7 +205,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-01-21T10:12:33Z",
-  "stars": 71261
+  "stars": 71262
  },
  "github/github-mcp-server": {
   "archived": false,
@@ -330,7 +330,7 @@
   "full_name": "LibreChat-AI/LibreChat",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T15:44:24Z",
+  "pushed_at": "2026-11-12T15:57:50Z",
   "stars": 47045
  },
  "mem0ai/mem0": {
@@ -420,7 +420,7 @@
   "full_name": "n8n-io/n8n",
   "language": "TypeScript",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-12T15:54:12Z",
+  "pushed_at": "2026-11-12T15:57:23Z",
   "stars": 210301
  },
  "nirdiamant/agents-towards-production": {
@@ -537,7 +537,7 @@
   "full_name": "stablyai/orca",
   "language": "TypeScript",
   "license": "MIT",
-  "pushed_at": "2026-11-12T15:54:13Z",
+  "pushed_at": "2026-11-12T15:56:57Z",
   "stars": 123187
  },
  "thedotmack/claude-mem": {
@@ -547,7 +547,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-12T08:04:02Z",
-  "stars": 116456
+  "stars": 116457
  },
  "trycua/cua": {
   "archived": false,
@@ -583,7 +583,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-12T11:21:04Z",
-  "stars": 40397
+  "stars": 40398
  },
  "vectorize-io/hindsight": {
   "archived": false,
@@ -591,7 +591,7 @@
   "full_name": "vectorize-io/hindsight",
   "language": "Python",
   "license": "MIT",
-  "pushed_at": "2026-11-12T15:19:16Z",
+  "pushed_at": "2026-11-12T15:57:55Z",
   "stars": 60656
  },
  "voltagent/awesome-agent-skills": {
