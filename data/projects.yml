@@ -128,6 +128,11 @@ categories:
         for: 想讓程式 Agent 放手做事、又不想讓它碰到本機的人
         note: 支援 macOS 13 以上與 Linux；作者提醒沙盒無法堵住所有漏洞，使用前先看安全說明
         added: 2026-11-12
+      - repo: alexeyw/lot-map
+        summary: Claude Code 的外掛，在對話旁開一個即時地圖，把每次工具呼叫、模型步驟、hook、技能和子 Agent 畫成飛向各站點的脈衝，並顯示 context 用量與錯誤。
+        for: 想一眼看出 Claude Code 正在讀檔、跑指令還是連網的人
+        note: 作者在 macOS 上開發測試；終端機預設只顯示文字列表，要顯示圖像需支援圖片的終端機
+        added: 2026-11-14
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -301,6 +306,11 @@ categories:
         summary: 以深度文件理解為核心的 RAG 引擎，擅長處理表格、PDF 等複雜格式。
         for: 要做企業知識庫的團隊
         added: 2026-11-10
+      - repo: agentes-chat/agentes-chat
+        summary: 可自架的團隊聊天軟體，Agent 和同事一起待在頻道與私訊裡，各有角色、負責人和每月預算，合併、部署等敏感動作要人在聊天中核准。
+        for: 想讓團隊在同一個地方跟 Agent 協作、又要自己掌握資料的人
+        note: AGPL-3.0 授權；模型 API 金鑰自備；瀏覽器、桌面與手機 App 等多項功能仍是 Beta
+        added: 2026-11-14
 
   - id: research
     name: 研究與通用 Agent
@@ -339,3 +349,13 @@ categories:
         summary: 最大的 MCP server 清單（英文）。
         for: 想找特定 MCP 工具的人
         added: 2026-11-10
+      - repo: Dodaios/ste80-humanizer
+        summary: 改寫文字的 Agent Skill，先刪掉常見的 AI 寫作痕跡，再依航太維修手冊用的簡化技術英文（ASD-STE100）規則把句子改短、改主動語態，事實不增不減。
+        for: 常要讀或改 AI 產出的英文文件、想讓內容更好讀的人
+        note: 只針對英文
+        added: 2026-11-14
+      - repo: Moh4696/cinematic-skill
+        summary: 讓程式 Agent 寫腳本、錄旁白、從 Wikimedia Commons 找公有領域圖片並記錄授權，再用 Python 程式碼逐格畫出一鏡到底的解說影片。
+        for: 想用 Agent 做紀錄片風格短片或產品介紹影片的人
+        note: 需要 Python、ffmpeg；最終配音可接任何 TTS 或真人錄音
+        added: 2026-11-14
