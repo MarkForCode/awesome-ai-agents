@@ -18,7 +18,7 @@
 3. **篩選**，全部符合才收錄：
    - 跟 AI Agent、MCP、Agent 工具鏈直接相關
    - 未封存、最近 30 天有 commit、有授權條款、README 有說明用途
-   - 不在 `projects.yml` 裡（repo 名稱不分大小寫比對）
+   - 不在 `projects.yml` 裡（repo 名稱不分大小寫比對），也不在其他尚未合併的 `daily/*` PR 裡（先用 `git fetch origin && git branch -r --list 'origin/daily/*'` 找出來，對照各分支的 `data/projects.yml`）
    - 排除：外洩的系統提示、繞過付費或服務條款的工具、自動海投履歷、未授權下載影音、加密貨幣炒作、明顯的灌星專案
 4. **挑 3～5 個**最值得介紹的，閱讀 README 後撰寫：
    - `summary`：一句話，說清楚它做什麼。用自己的話寫，不要翻譯或複製 README。
