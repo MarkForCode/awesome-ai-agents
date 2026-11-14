@@ -30,8 +30,9 @@
    - 一段引言（2～3 句）說明今天的趨勢或亮點
    - 「今日新收錄」：每個專案 2～3 句短評，說明為什麼值得看、跟現有工具比有什麼不同
    - 可選「值得一提」：已收錄專案的重大版本更新
-6. **產生並檢查**：`python scripts/build.py --check && python scripts/build.py --refresh`，確認沒有錯誤，也沒有「找不到」的警告。
-7. **提交**：commit 訊息用 `daily: YYYY-MM-DD 新增 N 個專案`，推送分支並開 PR 到 main，PR 描述列出新增的專案和簡短理由。
+6. **產生並檢查**：`python scripts/build.py --check && python scripts/build.py --refresh`，確認沒有錯誤，也沒有「找不到」的警告。這一步只是驗證，產生的檔案不提交。
+7. **提交**：只 commit 人工編寫的檔案：`data/projects.yml`、`daily/`、`weekly/`（以及本次有改到的 `AGENTS.md`、`scripts/`）。**不要提交** `README.md`、`data/stats.json`、`docs/`，先用 `git checkout -- README.md data/stats.json docs/ && git clean -fd docs/` 還原。這些檔案由 GitHub Actions（`.github/workflows/build.yml`）在合併到 main 後自動重新產生；PR 若一起提交，main 每天 08:17 的定時更新就會跟它衝突。
+   - commit 訊息用 `daily: YYYY-MM-DD 新增 N 個專案`，推送分支並開 PR 到 main，PR 描述列出新增的專案和簡短理由。
    - repo 設定改為「自動發布」後，改成直接推送到 main。
 
 ## 每週日額外工作
