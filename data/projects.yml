@@ -128,6 +128,11 @@ categories:
         for: 想讓程式 Agent 放手做事、又不想讓它碰到本機的人
         note: 支援 macOS 13 以上與 Linux；作者提醒沙盒無法堵住所有漏洞，使用前先看安全說明
         added: 2026-11-12
+      - repo: alexeyw/lot-map
+        summary: Claude Code 外掛，在對話旁開一個即時地圖，工具呼叫、模型請求、hook、技能和子 Agent 執行時會亮起對應的站點，也顯示 context 用量與錯誤。
+        for: 想一眼看懂 Claude Code 正在做什麼、卡在哪裡的人
+        note: 作者在 macOS 上開發測試；終端機版需要至少 144 欄寬
+        added: 2026-11-13
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -169,6 +174,11 @@ categories:
         for: 想讓程式 Agent 跑端對端測試的開發者與 QA 工程師
         note: FSL-1.1-ALv2 授權（原始碼公開，兩年後轉為 Apache-2.0，期間限制競爭用途），不是 OSI 認可的開源授權；需要 Node.js 24 以上，模型費用另計
         added: 2026-11-12
+      - repo: lxe/phoneuse
+        summary: 不越獄、不接線，用 AirPlay 把 iPhone 畫面鏡像到電腦，再讓電腦假裝成藍牙滑鼠鍵盤來操作，你或 Claude Code 等 Agent 都能點擊、輸入。
+        for: 想讓 Agent 操作 iPhone、又不想在手機上裝特殊工具的人
+        note: 仍是 alpha；以 Linux 為主，Mac 版需另購一塊 LilyGO T-Display 開發板當橋接器，Windows 要從原始碼安裝；手機和電腦須在同一個 Wi-Fi
+        added: 2026-11-13
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -301,6 +311,11 @@ categories:
         summary: 以深度文件理解為核心的 RAG 引擎，擅長處理表格、PDF 等複雜格式。
         for: 要做企業知識庫的團隊
         added: 2026-11-10
+      - repo: agentes-chat/agentes-chat
+        summary: 可自架的團隊聊天軟體，Agent 是頻道成員，各有負責人和每月預算，能用 MCP 工具、自己的電腦和瀏覽器，合併、部署等敏感動作要人在聊天室核准。
+        for: 想讓團隊和 Agent 在同一個地方協作、又想自己掌握伺服器的團隊
+        note: AGPL-3.0 授權；需要自備模型 API 金鑰；瀏覽器、手機與桌面 App 等功能仍在 beta
+        added: 2026-11-13
 
   - id: research
     name: 研究與通用 Agent
