@@ -1,5 +1,5 @@
 {
- "_updated": "2026-11-14T17:05+08:00",
+ "_updated": "2026-11-14T17:07+08:00",
  "aaif-goose/goose": {
   "archived": false,
   "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
@@ -42,7 +42,7 @@
   "full_name": "agno-agi/agno",
   "language": "Python",
   "license": "Apache-2.0",
-  "pushed_at": "2026-11-14T03:23:58Z",
+  "pushed_at": "2026-11-14T09:06:36Z",
   "stars": 43185
  },
  "ahujasid/mcp-for-blender": {
@@ -97,7 +97,7 @@
   "language": "Python",
   "license": "MIT",
   "pushed_at": "2026-11-14T08:26:36Z",
-  "stars": 120974
+  "stars": 120975
  },
  "bytedance/deer-flow": {
   "archived": false,
@@ -115,7 +115,7 @@
   "language": "Go",
   "license": "NOASSERTION",
   "pushed_at": "2026-11-14T07:58:03Z",
-  "stars": 29077
+  "stars": 29078
  },
  "chromedevtools/chrome-devtools-mcp": {
   "archived": false,
@@ -124,7 +124,7 @@
   "language": "TypeScript",
   "license": "Apache-2.0",
   "pushed_at": "2026-11-13T17:28:37Z",
-  "stars": 55771
+  "stars": 55772
  },
  "composiohq/composio": {
   "archived": false,
@@ -207,6 +207,15 @@
   "pushed_at": "2026-11-14T01:51:55Z",
   "stars": 2108
  },
+ "dodaios/ste80-humanizer": {
+  "archived": false,
+  "description": "STE80 Humanizer: agent skill that removes AI tells and rewrites text 80% of the way to ASD-STE100 (Simplified Technical English), the method Andrej Karpathy shared.",
+  "full_name": "Dodaios/ste80-humanizer",
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-10T08:52:47Z",
+  "stars": 497
+ },
  "firecrawl/firecrawl": {
   "archived": false,
   "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
@@ -276,7 +285,7 @@
   "full_name": "hesreallyhim/awesome-claude-code",
   "language": "Python",
   "license": "NOASSERTION",
-  "pushed_at": "2026-11-14T06:09:36Z",
+  "pushed_at": "2026-11-14T09:06:02Z",
   "stars": 57968
  },
  "huggingface/agents-course": {
@@ -304,7 +313,7 @@
   "language": "TypeScript",
   "license": "MIT",
   "pushed_at": "2026-11-14T02:01:22Z",
-  "stars": 5226
+  "stars": 5227
  },
  "langchain-ai/langchain": {
   "archived": false,
@@ -440,6 +449,15 @@
   "license": "NOASSERTION",
   "pushed_at": "2026-11-10T14:38:41Z",
   "stars": 13765
+ },
+ "moh4696/cinematic-skill": {
+  "archived": false,
+  "description": "Agent skill for narrated cinematic films built entirely from code: one continuous camera over photos, maps and cards, timed to the voice. Claude Code, Codex, Cursor, Gemini CLI.",
+  "full_name": "Moh4696/cinematic-skill",
+  "language": "Python",
+  "license": "MIT",
+  "pushed_at": "2026-11-09T15:35:12Z",
+  "stars": 318
  },
  "n8n-io/n8n": {
   "archived": false,
@@ -582,7 +600,7 @@
   "full_name": "trycua/cua",
   "language": "Rust",
   "license": "MIT",
-  "pushed_at": "2026-11-14T09:05:35Z",
+  "pushed_at": "2026-11-14T09:06:45Z",
   "stars": 32328
  },
  "unclecode/crawl4ai": {

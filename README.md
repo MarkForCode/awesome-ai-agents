@@ -2,12 +2,13 @@
 
 > 精選 AI Agent、MCP 與相關開源工具，每天更新，附繁體中文導讀。
 
-目前收錄 **72** 個專案 · 數據更新：2026-11-14 · [網站版](https://markforcode.github.io/awesome-ai-agents/) · [RSS](https://markforcode.github.io/awesome-ai-agents/feed.xml)
+目前收錄 **74** 個專案 · 數據更新：2026-11-14 · [網站版](https://markforcode.github.io/awesome-ai-agents/) · [RSS](https://markforcode.github.io/awesome-ai-agents/feed.xml)
 
 每個專案都附「一句話介紹」和「適合誰」。⭐ 星星數、授權與更新狀態每天由 GitHub API 自動同步。
 
 ## 🆕 最近更新
 
+- [2026-11-14](daily/2026-11-14.md)
 - [2026-11-13](daily/2026-11-13.md)
 - [2026-11-12](daily/2026-11-12.md)
 - [2026-11-11](daily/2026-11-11.md)
@@ -24,7 +25,7 @@
 - [網頁資料擷取](#scraping)（3）
 - [無程式碼平台與自架介面](#platforms)（8）
 - [研究與通用 Agent](#research)（3）
-- [外掛、技能與其他清單](#lists)（4）
+- [外掛、技能與其他清單](#lists)（6）
 
 <a id="learn"></a>
 
@@ -311,6 +312,12 @@
 - **[VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)** · ⭐ 37.2k · MIT  
   收錄 1000 多個 Agent Skills，相容 Claude Code、Codex、Gemini CLI、Cursor 等。  
   👤 **適合**：想擴充 Agent 能力的人
+- **[Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer)** · ⭐ 497 · Python · MIT  
+  改寫文字的 Agent Skill，先刪掉常見的 AI 寫作痕跡，再依航太維修手冊用的簡化技術英文（ASD-STE100）規則把句子改短、改主動語態，事實不增不減。  
+  👤 **適合**：常要讀或改 AI 產出的英文文件、想讓內容更好讀的人　⚠️ 只針對英文
+- **[Moh4696/cinematic-skill](https://github.com/Moh4696/cinematic-skill)** · ⭐ 318 · Python · MIT  
+  讓程式 Agent 寫腳本、錄旁白、從 Wikimedia Commons 找公有領域圖片並記錄授權，再用 Python 程式碼逐格畫出一鏡到底的解說影片。  
+  👤 **適合**：想用 Agent 做紀錄片風格短片或產品介紹影片的人　⚠️ 需要 Python、ffmpeg；最終配音可接任何 TTS 或真人錄音
 
 ## 參與貢獻
 
