@@ -1,9 +1,9 @@
 name: daily
 
 on:
-  workflow_dispatch: # 先只開手動執行，測試用
-  # schedule:
-  #   - cron: "23 21 * * *" # 台北 05:23（與 Claude 排程並行對照期）；切換後改回 "23 22 * * *" = 06:23
+  workflow_dispatch:
+  schedule:
+    - cron: "23 22 * * *" # 台北 06:23（GitHub 尖峰時段可能延後數小時）
 
 jobs:
   daily:
