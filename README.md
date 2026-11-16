@@ -2,12 +2,13 @@
 
 > 精選 AI Agent、MCP 與相關開源工具，每天更新，附繁體中文導讀。
 
-目前收錄 **74** 個專案 · 數據更新：2026-11-15 · [網站版](https://markforcode.github.io/awesome-ai-agents/) · [RSS](https://markforcode.github.io/awesome-ai-agents/feed.xml)
+目前收錄 **78** 個專案 · 數據更新：2026-11-16 · [網站版](https://markforcode.github.io/awesome-ai-agents/) · [RSS](https://markforcode.github.io/awesome-ai-agents/feed.xml)
 
 每個專案都附「一句話介紹」和「適合誰」。⭐ 星星數、授權與更新狀態每天由 GitHub API 自動同步。
 
 ## 🆕 最近更新
 
+- [2026-11-15](daily/2026-11-15.md)
 - [2026-11-14](daily/2026-11-14.md)
 - [2026-11-13](daily/2026-11-13.md)
 - [2026-11-12](daily/2026-11-12.md)
@@ -25,7 +26,7 @@
 - [網頁資料擷取](#scraping)（3）
 - [無程式碼平台與自架介面](#platforms)（8）
 - [研究與通用 Agent](#research)（3）
-- [外掛、技能與其他清單](#lists)（6）
+- [外掛、技能與其他清單](#lists)（10）
 
 <a id="learn"></a>
 
@@ -33,16 +34,16 @@
 
 從零開始理解 AI Agent 與 MCP 的課程、教材與指南。
 
-- **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** · ⭐ 80.4k · Python · MIT  
+- **[shareAI-lab/learn-claude-code](https://github.com/shareAI-lab/learn-claude-code)** · ⭐ 80.5k · Python · MIT  
   從零打造一個類似 Claude Code 的迷你 Agent，一步步拆解「Agent 外殼」是怎麼運作的。  
   👤 **適合**：好奇程式碼 Agent 內部原理的人
 - **[dair-ai/Prompt-Engineering-Guide](https://github.com/dair-ai/Prompt-Engineering-Guide)** · ⭐ 80.1k · MDX · MIT · 💤 半年未更新  
   提示工程經典指南，內容已擴充到 context engineering、RAG 與 Agent。  
-  👤 **適合**：所有要跟 LLM 打交道的人
-- **[microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners)** · ⭐ 79.7k · Jupyter Notebook · MIT  
+  👤 **適合**：所有要跟 LLM 打交道的人　⚠️ 2026 年 3 月後就沒有新的 commit，較新的技巧可能還沒收進來
+- **[microsoft/ai-agents-for-beginners](https://github.com/microsoft/ai-agents-for-beginners)** · ⭐ 79.8k · Jupyter Notebook · MIT  
   微軟出的 18 堂 AI Agent 入門課，每堂都有講義和可執行的範例程式。  
   👤 **適合**：第一次接觸 Agent、想有系統學起來的開發者
-- **[huggingface/agents-course](https://github.com/huggingface/agents-course)** · ⭐ 34.9k · MDX · Apache-2.0  
+- **[huggingface/agents-course](https://github.com/huggingface/agents-course)** · ⭐ 35.0k · MDX · Apache-2.0  
   Hugging Face 的免費 Agent 課程，涵蓋 smolagents、LangChain、LlamaIndex 等主流工具。  
   👤 **適合**：想邊學邊動手、順便比較不同框架的人
 - **[NirDiamant/GenAI_Agents](https://github.com/NirDiamant/GenAI_Agents)** · ⭐ 25.0k · Jupyter Notebook  
@@ -61,16 +62,16 @@
 
 用程式碼打造自己的 Agent。
 
-- **[langchain-ai/langchain](https://github.com/langchain-ai/langchain)** · ⭐ 149.5k · Python · MIT  
+- **[langchain-ai/langchain](https://github.com/langchain-ai/langchain)** · ⭐ 149.6k · Python · MIT  
   最多人用的 LLM 應用框架，串接模型、工具、資料來源的生態系最完整。  
   👤 **適合**：需要大量現成整合的專案　⚠️ 抽象層較多，簡單需求可能殺雞用牛刀
 - **[FoundationAgents/MetaGPT](https://github.com/FoundationAgents/MetaGPT)** · ⭐ 71.3k · Python · MIT · 💤 半年未更新  
   模擬一間軟體公司，讓產品經理、架構師、工程師等 Agent 協作寫出軟體。  
-  👤 **適合**：研究多 Agent 角色分工的人
-- **[microsoft/autogen](https://github.com/microsoft/autogen)** · ⭐ 61.8k · Python · CC-BY-4.0  
+  👤 **適合**：研究多 Agent 角色分工的人　⚠️ 2026 年 1 月後就沒有新的 commit，維護狀況不明，正式專案使用前先評估
+- **[microsoft/autogen](https://github.com/microsoft/autogen)** · ⭐ 61.9k · Python · CC-BY-4.0  
   微軟的多 Agent 對話框架，學術界和研究原型常用。  
   👤 **適合**：研究多 Agent 互動的開發者
-- **[crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)** · ⭐ 60.9k · Python · MIT  
+- **[crewAIInc/crewAI](https://github.com/crewAIInc/crewAI)** · ⭐ 61.0k · Python · MIT  
   讓多個扮演不同角色的 Agent 分工合作，例如研究員＋寫手＋審稿員。  
   👤 **適合**：想快速做出多 Agent 協作的人
 - **[langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)** · ⭐ 45.0k · Python · MIT  
@@ -79,13 +80,13 @@
 - **[agno-agi/agno](https://github.com/agno-agi/agno)** · ⭐ 43.2k · Python · Apache-2.0  
   輕量、速度快的 Python Agent 框架，內建記憶、知識庫與多 Agent 團隊。  
   👤 **適合**：想要簡潔 API 的 Python 開發者
-- **[agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)** · ⭐ 36.0k · Python · Apache-2.0  
+- **[agentscope-ai/agentscope](https://github.com/agentscope-ai/agentscope)** · ⭐ 36.1k · Python · Apache-2.0  
   阿里巴巴開源的多 Agent 框架，強調流程透明、可觀察，支援 MCP。  
   👤 **適合**：需要看清楚 Agent 每一步在做什麼的人
 - **[deepset-ai/haystack](https://github.com/deepset-ai/haystack)** · ⭐ 27.0k · Python · Apache-2.0  
   以模組化管線為核心的框架，特別擅長檢索（RAG）和可控的 Agent 流程。  
   👤 **適合**：以文件檢索為主的企業應用
-- **[letta-ai/letta](https://github.com/letta-ai/letta)** · ⭐ 25.4k · Apache-2.0  
+- **[letta-ai/letta](https://github.com/letta-ai/letta)** · ⭐ 25.5k · Apache-2.0  
   前身是 MemGPT，打造有長期記憶、會隨使用持續學習的 Agent。  
   👤 **適合**：需要 Agent 記住使用者的應用
 - **[google/adk-python](https://github.com/google/adk-python)** · ⭐ 22.2k · Python · Apache-2.0  
@@ -101,34 +102,34 @@
 
 在終端機或編輯器裡幫你寫程式的 Agent。
 
-- **[stablyai/orca](https://github.com/stablyai/orca)** · ⭐ 125.2k · TypeScript · MIT  
+- **[stablyai/orca](https://github.com/stablyai/orca)** · ⭐ 126.0k · TypeScript · MIT  
   同時管理一整隊程式 Agent（Claude Code、Codex 等），用你自己的訂閱，支援桌面、手機與遠端執行。  
   👤 **適合**：想讓多個 Agent 平行工作的人
-- **[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)** · ⭐ 108.8k · TypeScript · Apache-2.0  
+- **[google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli)** · ⭐ 108.9k · TypeScript · Apache-2.0  
   Google 開源的終端機 Agent，直接在命令列用 Gemini 讀寫程式碼、執行指令。  
   👤 **適合**：想要免費額度、在終端機工作的開發者
 - **[openinterpreter/openinterpreter](https://github.com/openinterpreter/openinterpreter)** · ⭐ 68.9k · Rust · Apache-2.0  
   老牌開源專案，現在定位為給開源模型（Kimi、GLM 等）用的程式 Agent，以 Rust 改寫。  
   👤 **適合**：想在本機用開源模型寫程式的人
-- **[aaif-goose/goose](https://github.com/aaif-goose/goose)** · ⭐ 56.6k · Rust · Apache-2.0  
+- **[aaif-goose/goose](https://github.com/aaif-goose/goose)** · ⭐ 56.7k · Rust · Apache-2.0  
   可擴充的開源 Agent，不只建議程式碼，還能安裝套件、執行、測試，支援任何 LLM 與 MCP。  
   👤 **適合**：想要不綁定模型廠商的程式 Agent
-- **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** · ⭐ 40.8k · TypeScript · MIT  
+- **[Yeachan-Heo/oh-my-claudecode](https://github.com/Yeachan-Heo/oh-my-claudecode)** · ⭐ 40.9k · TypeScript · MIT  
   Claude Code 的多 Agent 協作外掛，讓多個 Agent 分工處理大型任務。  
   👤 **適合**：重度 Claude Code 使用者
-- **[QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)** · ⭐ 30.4k · TypeScript · Apache-2.0  
+- **[QwenLM/qwen-code](https://github.com/QwenLM/qwen-code)** · ⭐ 30.6k · TypeScript · Apache-2.0  
   通義千問團隊的終端機程式 Agent，針對 Qwen 系列模型最佳化。  
   👤 **適合**：想用開源模型寫程式的人
 - **[charmbracelet/crush](https://github.com/charmbracelet/crush)** · ⭐ 29.1k · Go  
   Charm 團隊出品、介面很漂亮的終端機程式 Agent，支援多家模型。  
   👤 **適合**：重視終端機體驗的開發者
-- **[KKKKhazix/agent-autoloop](https://github.com/KKKKhazix/agent-autoloop)** · ⭐ 5.4k · TypeScript · MIT  
+- **[KKKKhazix/agent-autoloop](https://github.com/KKKKhazix/agent-autoloop)** · ⭐ 5.6k · TypeScript · MIT  
   讓 Claude Code、Codex 等命令列 Agent 依規則在背景接手定時任務或 GitHub issue 等事件，需要人決定時才推卡片到飛書、Slack、Discord 或桌面通知。  
   👤 **適合**：想讓命令列 Agent 在沒人盯著時持續工作的人　⚠️ 文件以簡體中文為主；需要 Node 24 以上
-- **[alexeyw/lot-map](https://github.com/alexeyw/lot-map)** · ⭐ 840 · TypeScript · MIT  
+- **[alexeyw/lot-map](https://github.com/alexeyw/lot-map)** · ⭐ 900 · TypeScript · MIT  
   Claude Code 外掛，在對話旁開一個即時地圖，工具呼叫、模型請求、hook、技能和子 Agent 執行時會亮起對應的站點，也顯示 context 用量與錯誤。  
   👤 **適合**：想一眼看懂 Claude Code 正在做什麼、卡在哪裡的人　⚠️ 作者在 macOS 上開發測試；終端機版需要至少 144 欄寬
-- **[devvmhq/devvm](https://github.com/devvmhq/devvm)** · ⭐ 634 · Go · MIT  
+- **[devvmhq/devvm](https://github.com/devvmhq/devvm)** · ⭐ 648 · Go · MIT  
   每個專案資料夾開一台獨立的 Lima 虛擬機，自動偵測需要的工具鏈，讓 Claude Code、Codex 等 Agent 在裡面工作，預設只能連到允許的網域。  
   👤 **適合**：想讓程式 Agent 放手做事、又不想讓它碰到本機的人　⚠️ 支援 macOS 13 以上與 Linux；作者提醒沙盒無法堵住所有漏洞，使用前先看安全說明
 
@@ -141,7 +142,7 @@
 - **[browser-use/browser-use](https://github.com/browser-use/browser-use)** · ⭐ 121.1k · Python · MIT  
   讓 AI 操作瀏覽器的 Python 函式庫，能點擊、填表、跨網頁完成任務。  
   👤 **適合**：想自動化網頁操作的開發者
-- **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** · ⭐ 56.5k · TypeScript · Apache-2.0  
+- **[ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)** · ⭐ 57.2k · TypeScript · Apache-2.0  
   Chrome 官方 DevTools MCP，讓程式 Agent 能看 console、網路請求、效能數據來除錯。  
   👤 **適合**：前端開發者
 - **[microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp)** · ⭐ 39.7k · TypeScript · Apache-2.0  
@@ -162,7 +163,7 @@
 - **[vostride/agent-qa](https://github.com/vostride/agent-qa)** · ⭐ 857 · TypeScript  
   用自然語言描述使用流程，由 Agent 在網頁、Android 或 iOS 上實際操作測試，失敗時留下對應步驟的截圖；可從 CLI、儀表板或透過 MCP 從程式 Agent 呼叫，並把測試中學到的經驗存成 repo 裡可審查的檔案。  
   👤 **適合**：想讓程式 Agent 跑端對端測試的開發者與 QA 工程師　⚠️ FSL-1.1-ALv2 授權（原始碼公開，兩年後轉為 Apache-2.0，期間限制競爭用途），不是 OSI 認可的開源授權；需要 Node.js 24 以上，模型費用另計
-- **[lxe/phoneuse](https://github.com/lxe/phoneuse)** · ⭐ 663 · Python · MIT  
+- **[lxe/phoneuse](https://github.com/lxe/phoneuse)** · ⭐ 667 · Python · MIT  
   不越獄、不接線，用 AirPlay 把 iPhone 畫面鏡像到電腦，再讓電腦假裝成藍牙滑鼠鍵盤來操作，你或 Claude Code 等 Agent 都能點擊、輸入。  
   👤 **適合**：想讓 Agent 操作 iPhone、又不想在手機上裝特殊工具的人　⚠️ 仍是 alpha；以 Linux 為主，Mac 版需另購一塊 LilyGO T-Display 開發板當橋接器，Windows 要從原始碼安裝；手機和電腦須在同一個 Wi-Fi
 
@@ -175,18 +176,18 @@
 - **[modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers)** · ⭐ 92.0k · TypeScript  
   MCP 官方的參考伺服器合集，包含檔案系統、Git、網頁擷取等範例。  
   👤 **適合**：想看標準寫法或找基本工具的人
-- **[upstash/context7](https://github.com/upstash/context7)** · ⭐ 64.8k · TypeScript · MIT  
+- **[upstash/context7](https://github.com/upstash/context7)** · ⭐ 64.9k · TypeScript · MIT  
   即時提供最新版函式庫文件給 Agent，減少 AI 寫出舊版或不存在的 API。  
   👤 **適合**：所有用 AI 寫程式的人
 - **[DayuanJiang/next-ai-draw-io](https://github.com/DayuanJiang/next-ai-draw-io)** · ⭐ 37.0k · TypeScript · Apache-2.0  
   用聊天的方式畫 draw.io 圖表，有網頁版、桌面版，也有 MCP server。  
   👤 **適合**：常畫架構圖、流程圖的人
+- **[ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender)** · ⭐ 34.6k · Python · MIT  
+  用自然語言操作 Blender 建 3D 模型（社群外掛，非官方）。  
+  👤 **適合**：3D 創作者
 - **[github/github-mcp-server](https://github.com/github/github-mcp-server)** · ⭐ 34.5k · Go · MIT  
   GitHub 官方 MCP server，讓 Agent 讀寫 issue、PR、程式碼與 Actions。  
   👤 **適合**：想讓 Agent 幫忙管理 GitHub 的人
-- **[ahujasid/mcp-for-blender](https://github.com/ahujasid/mcp-for-blender)** · ⭐ 34.5k · Python · MIT  
-  用自然語言操作 Blender 建 3D 模型（社群外掛，非官方）。  
-  👤 **適合**：3D 創作者
 - **[oraios/serena](https://github.com/oraios/serena)** · ⭐ 31.4k · Python  
   提供語意層級的程式碼搜尋與編輯，讓 Agent 像用 IDE 一樣理解大型專案。  
   👤 **適合**：在大型程式碼庫裡用 Agent 的人
@@ -212,22 +213,22 @@
 
 讓 Agent 記得更多、用更少 token。
 
-- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · ⭐ 117.2k · TypeScript · Apache-2.0  
+- **[thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)** · ⭐ 117.4k · TypeScript · Apache-2.0  
   自動記錄 Agent 每次工作的內容並壓縮，下次開新對話時帶回相關記憶。  
   👤 **適合**：覺得 Claude Code 每次都「失憶」的人
-- **[headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)** · ⭐ 79.7k · Python · Apache-2.0  
+- **[headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom)** · ⭐ 79.8k · Python · Apache-2.0  
   在工具輸出、日誌、檔案送進 LLM 前先壓縮，有函式庫、代理伺服器和 MCP 三種用法。  
   👤 **適合**：想省 token 費用的人
 - **[mem0ai/mem0](https://github.com/mem0ai/mem0)** · ⭐ 69.0k · Python · Apache-2.0  
   Agent 的記憶層，自動記住使用者偏好與對話重點，可直接嵌入現有應用。  
   👤 **適合**：做個人化助理或客服的人
-- **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)** · ⭐ 61.1k · Python · MIT  
+- **[vectorize-io/hindsight](https://github.com/vectorize-io/hindsight)** · ⭐ 61.3k · Python · MIT  
   會從經驗中學習的 Agent 記憶系統。  
   👤 **適合**：研究長期記憶的開發者
 - **[VectifyAI/PageIndex](https://github.com/VectifyAI/PageIndex)** · ⭐ 40.4k · Python · MIT  
   不用向量資料庫的 RAG，把文件建成目錄樹，讓 LLM 像人一樣翻目錄找答案。  
   👤 **適合**：處理長篇報告、財報、法規文件的人
-- **[gogoymh/auto-ontology-mcp](https://github.com/gogoymh/auto-ontology-mcp)** · ⭐ 417 · Python · Apache-2.0  
+- **[gogoymh/auto-ontology-mcp](https://github.com/gogoymh/auto-ontology-mcp)** · ⭐ 428 · Python · Apache-2.0  
   把 NVIDIA Auto Ontology 的語意層包成 MCP 伺服器，由你的 Agent 建立資料庫的業務詞彙並寫出經過檢查的唯讀 SQL，也能當個人知識庫用。  
   👤 **適合**：想用自然語言查公司資料庫，或想建立可查詢個人知識庫的人
 
@@ -237,10 +238,10 @@
 
 把網頁變成 Agent 讀得懂的資料。
 
-- **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)** · ⭐ 201.9k · TypeScript · AGPL-3.0  
+- **[firecrawl/firecrawl](https://github.com/firecrawl/firecrawl)** · ⭐ 202.1k · TypeScript · AGPL-3.0  
   把整個網站爬下來轉成乾淨的 Markdown 或結構化資料，專為 LLM 設計。  
   👤 **適合**：需要餵網頁資料給 AI 的人　⚠️ AGPL-3.0 授權，也有付費雲端版
-- **[D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)** · ⭐ 103.0k · Python · BSD-3-Clause  
+- **[D4Vinci/Scrapling](https://github.com/D4Vinci/Scrapling)** · ⭐ 103.4k · Python · BSD-3-Clause  
   Python 爬蟲框架，從單一請求到大規模爬取都能處理，網站結構改變時能自動調整。  
   👤 **適合**：需要穩定爬蟲的 Python 開發者　⚠️ 請遵守目標網站的使用條款
 - **[unclecode/crawl4ai](https://github.com/unclecode/crawl4ai)** · ⭐ 87.4k · Python · Apache-2.0  
@@ -253,13 +254,13 @@
 
 不太寫程式也能打造 Agent，或自架 AI 介面。
 
-- **[n8n-io/n8n](https://github.com/n8n-io/n8n)** · ⭐ 210.5k · TypeScript  
+- **[n8n-io/n8n](https://github.com/n8n-io/n8n)** · ⭐ 210.6k · TypeScript  
   視覺化工作流程自動化平台，內建 AI 節點，有 400 多種整合，可以自架。  
   👤 **適合**：想把 AI 接進日常工作流程的人　⚠️ fair-code 授權，不是完全的開源授權
 - **[langgenius/dify](https://github.com/langgenius/dify)** · ⭐ 161.2k · Python  
   拖拉式打造 Agent 流程和 RAG 知識庫的平台，可自架或用雲端版。  
   👤 **適合**：想快速做出企業內部 AI 應用的團隊
-- **[open-webui/open-webui](https://github.com/open-webui/open-webui)** · ⭐ 158.7k · Svelte  
+- **[open-webui/open-webui](https://github.com/open-webui/open-webui)** · ⭐ 158.8k · Svelte  
   最受歡迎的自架 AI 聊天介面，支援 Ollama 本地模型和 OpenAI 相容 API。  
   👤 **適合**：想在本機或公司內部架 ChatGPT 的人
 - **[infiniflow/ragflow](https://github.com/infiniflow/ragflow)** · ⭐ 94.2k · Go · Apache-2.0  
@@ -268,13 +269,13 @@
 - **[Mintplex-Labs/anything-llm](https://github.com/Mintplex-Labs/anything-llm)** · ⭐ 68.3k · JavaScript · MIT  
   本機優先的全功能 AI 應用，可以跟文件對話、執行 Agent，不必把資料交給雲端。  
   👤 **適合**：重視隱私的個人與小團隊
-- **[LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat)** · ⭐ 47.1k · TypeScript · MIT  
+- **[LibreChat-AI/LibreChat](https://github.com/LibreChat-AI/LibreChat)** · ⭐ 47.2k · TypeScript · MIT  
   功能完整的開源 ChatGPT 替代介面，一個介面切換多家模型，支援 Agent、MCP 與 Skills。  
   👤 **適合**：想統一管理多家模型的團隊
-- **[activepieces/activepieces](https://github.com/activepieces/activepieces)** · ⭐ 25.5k · TypeScript  
+- **[activepieces/activepieces](https://github.com/activepieces/activepieces)** · ⭐ 25.6k · TypeScript  
   開源的 Zapier 替代品，內建約 400 個 MCP server。  
   👤 **適合**：想要開源自動化平台的人
-- **[agentes-chat/agentes-chat](https://github.com/agentes-chat/agentes-chat)** · ⭐ 1.4k · TypeScript · AGPL-3.0  
+- **[agentes-chat/agentes-chat](https://github.com/agentes-chat/agentes-chat)** · ⭐ 1.6k · TypeScript · AGPL-3.0  
   可自架的團隊聊天軟體，Agent 是頻道成員，各有負責人和每月預算，能用 MCP 工具、自己的電腦和瀏覽器，合併、部署等敏感動作要人在聊天室核准。  
   👤 **適合**：想讓團隊和 Agent 在同一個地方協作、又想自己掌握伺服器的團隊　⚠️ AGPL-3.0 授權；需要自備模型 API 金鑰；瀏覽器、手機與桌面 App 等功能仍在 beta
 
@@ -303,21 +304,33 @@
 - **[punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers)** · ⭐ 97.7k · MIT  
   最大的 MCP server 清單（英文）。  
   👤 **適合**：想找特定 MCP 工具的人
-- **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** · ⭐ 58.0k · Python  
+- **[hesreallyhim/awesome-claude-code](https://github.com/hesreallyhim/awesome-claude-code)** · ⭐ 58.1k · Python  
   精選的 Claude Code 資源清單：指令、工作流程、外掛等。  
   👤 **適合**：Claude Code 使用者
-- **[anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)** · ⭐ 47.3k · Python · Apache-2.0  
+- **[anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official)** · ⭐ 47.4k · Python · Apache-2.0  
   Anthropic 官方維護的 Claude Code 外掛目錄。  
   👤 **適合**：Claude Code 使用者
 - **[VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills)** · ⭐ 37.2k · MIT  
   收錄 1000 多個 Agent Skills，相容 Claude Code、Codex、Gemini CLI、Cursor 等。  
   👤 **適合**：想擴充 Agent 能力的人
-- **[Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer)** · ⭐ 629 · Python · MIT  
+- **[JDhruv14/line-art-animation](https://github.com/JDhruv14/line-art-animation)** · ⭐ 854 · TypeScript · MIT  
+  一個 Claude Skill 加上小型 TypeScript 函式庫，讓 Agent 用 SVG 做出會走路、會互動、有日夜變化的線稿風格動畫元件，也能逐格輸出成影片。  
+  👤 **適合**：想在網頁加手繪風動畫插圖、或用 Agent 做動態視覺的前端開發者
+- **[Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer)** · ⭐ 703 · Python · MIT  
   改寫文字的 Agent Skill，先刪掉常見的 AI 寫作痕跡，再依航太維修手冊用的簡化技術英文（ASD-STE100）規則把句子改短、改主動語態，事實不增不減。  
   👤 **適合**：常要讀或改 AI 產出的英文文件、想讓內容更好讀的人　⚠️ 只針對英文
-- **[Moh4696/cinematic-skill](https://github.com/Moh4696/cinematic-skill)** · ⭐ 424 · Python · MIT  
+- **[Moh4696/cinematic-skill](https://github.com/Moh4696/cinematic-skill)** · ⭐ 533 · Python · MIT  
   讓程式 Agent 寫腳本、錄旁白、從 Wikimedia Commons 找公有領域圖片並記錄授權，再用 Python 程式碼逐格畫出一鏡到底的解說影片。  
   👤 **適合**：想用 Agent 做紀錄片風格短片或產品介紹影片的人　⚠️ 需要 Python、ffmpeg；最終配音可接任何 TTS 或真人錄音
+- **[op7418/guizang-game-skill](https://github.com/op7418/guizang-game-skill)** · ⭐ 365 · JavaScript · AGPL-3.0  
+  讓 Claude Code、Codex 等 Agent 照一套實際走過的流程，從規劃、美術素材、動作手感到打包，做出能在瀏覽器玩的 3D 動作遊戲。  
+  👤 **適合**：想用 Agent 做網頁遊戲原型、但沒有遊戲開發經驗的人　⚠️ AGPL-3.0 授權；搭配 Tripo、即夢等素材生成服務效果較好，這些服務可能要付費；README 以簡體中文為主
+- **[bookleme/bookleme](https://github.com/bookleme/bookleme)** · ⭐ 259 · Python · MIT  
+  把一本書（PDF、EPUB、DOCX 等）轉成可安裝的 Agent Skill，可以是能查詢的知識包，也可以是照書中流程一問一答的教練，並逐字檢查引文是否真的出自原文。  
+  👤 **適合**：想把書裡的方法論變成 Agent 能照著做的流程的人　⚠️ 仍在早期開發，部分體裁尚未實作；用第三方書籍產生的 Skill 預設不公開，散布前要自行確認著作權
+- **[nishuzumi/show-me-you-want-skill](https://github.com/nishuzumi/show-me-you-want-skill)** · ⭐ 196 · HTML · MIT  
+  讓程式 Agent 動手寫程式前，先把要改的畫面和介面畫成單檔 HTML 線框原型，用顏色標出新增、修改、刪除的地方，你在圖上拖動、批注後把意見貼回去，確認後才開始寫程式。  
+  👤 **適合**：常跟 Agent 對不上需求、改完介面才發現不是自己要的開發者　⚠️ 需要 Node 18 以上；README 以簡體中文為主
 
 ## 參與貢獻
 
