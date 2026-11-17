@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-16 每日 AI Agent 精選</title><meta name="description" content="精選 AI Agent、MCP 與相關開源工具，每天更新，附繁體中文導讀。">
+<link rel="alternate" type="application/rss+xml" title="Awesome AI Agents 繁中" href="https://markforcode.github.io/awesome-ai-agents/feed.xml">
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a65;--line:#e6e3dc;--acc:#0b6e4f;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ecebe6;--mut:#9b9a94;--line:#2c2b28;--acc:#5ccf9f;--card:#1c1c1a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:40px 20px 80px}
+header h1{font-size:2rem;margin:0 0 6px;letter-spacing:-.01em}header p{color:var(--mut);margin:0}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px}
+nav a{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.9rem;text-decoration:none;color:var(--fg)}
+nav a:hover{border-color:var(--acc);color:var(--acc)}
+h2{margin:48px 0 4px;font-size:1.35rem}h2+p.desc{color:var(--mut);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+.card a.name{font-weight:600;color:var(--acc);text-decoration:none}.meta{color:var(--mut);font-size:.85rem;margin-left:6px}
+.card p{margin:6px 0 0}.for{color:var(--mut);font-size:.92rem}.note{color:#b4590a;font-size:.92rem}
+a{color:var(--acc)}.daily li{margin:6px 0}footer{margin-top:60px;color:var(--mut);font-size:.85rem}
+input#q{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font-size:1rem;margin-top:16px}
+</style></head><body><div class="wrap"><p><a href="../">← 回到清單</a></p><h2>2026-11-16 給 Agent 的專用工具：不搶焦點的瀏覽器、會畫 PCB 的 MCP</h2>
+<blockquote>今天收錄 4 個專案，有三個在處理同一件事：把現有工具改造成更適合 Agent 使用的形式。兩個瀏覽器工具都把重點放在減少 token 和來回次數，另一個讓 Agent 直接操作 KiCad 畫電路板。最後一個是會因為事件自動醒來的終端機 Agent。</blockquote>
+<h3>今日新收錄</h3>
+<ul>
+<li><strong><a href="https://github.com/paul-nameless/agweb">paul-nameless/agweb</a></strong> · 瀏覽器與電腦操作<br>作者同時跑好幾個程式 Agent，受不了 Playwright 的 Chrome 視窗一直搶走鍵盤焦點，就用 WebKit 寫了這個 macOS 瀏覽器。指令刻意沿用 playwright-cli 的名稱，每個動作執行完會直接回報頁面哪裡變了，不必再拍一次快照；登入、驗證碼可以用 <code>ask</code> 交給你處理，密碼可以從 1Password 等工具讀取，不會出現在對話紀錄裡。限制是只能用在 macOS 26 以上，也沒有 Chrome DevTools Protocol。</li>
+<li><strong><a href="https://github.com/Tthanh2k6/turbo-browser-mcp">Tthanh2k6/turbo-browser-mcp</a></strong> · 瀏覽器與電腦操作<br>跟 agweb 想解決的問題類似，但走 MCP 路線、底層仍是 Playwright。它把細碎的點擊、填欄位合併成批次工具，點擊後只回傳變動的部分，上傳檔案時直接給磁碟路徑、不用把 Base64 塞進 context，按下送出前預設也會先停下來等人確認。README 裡的 token 節省數字是作者自己的基準測試，專案也還很新，可以拿來跟 microsoft/playwright-mcp 比較看看。</li>
+<li><strong><a href="https://github.com/claynicholson/copper-kicad-mcp">claynicholson/copper-kicad-mcp</a></strong> · MCP 伺服器與 SDK<br>讓 Agent 從「做一塊 USB-C 供電的 ESP32-C3 板子」這種描述開始，畫電路圖、到 LCSC 查現貨零件、擺放佈線，每次修改後都重跑 KiCad 的 ERC/DRC，最後輸出可以下單打樣的 Gerber 與 BOM。伺服器本身不呼叫模型，用哪個模型由你的 AI 工具決定。需要 KiCad 10，Windows 測試最完整。</li>
+<li><strong><a href="https://github.com/pmndrs/pine">pmndrs/pine</a></strong> · 研究與通用 Agent<br>出自 react-three-fiber 背後的 pmndrs 團隊。多數 Agent 要等你下指令，pine 則可以訂閱資料夾、網站、webhook、MQTT 等事件，例如「掃描資料夾每多一個檔案，就整理出摘要和付款資訊」。設定檔不必自己寫，由主 Agent 透過對話建立子 Agent、MCP 和排程；終端機介面支援分頁、圖片與拖放。目前支援 macOS 與 Linux。</li>
+</ul>
+<p>有想推薦的專案？歡迎到 <a href="https://github.com/markforcode/awesome-ai-agents/issues">GitHub</a> 開 issue。</p>
+<footer>由 <a href="https://github.com/markforcode/awesome-ai-agents">markforcode/awesome-ai-agents</a> 自動產生 · 內容以 CC0 釋出</footer></div></body></html>
