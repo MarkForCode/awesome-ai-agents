@@ -181,6 +181,16 @@ categories:
         for: 想讓 Agent 操作 iPhone、又不想在手機上裝特殊工具的人
         note: 仍是 alpha；以 Linux 為主，Mac 版需另購一塊 LilyGO T-Display 開發板當橋接器，Windows 要從原始碼安裝；手機和電腦須在同一個 Wi-Fi
         added: 2026-11-13
+      - repo: paul-nameless/agweb
+        summary: 以 WebKit 打造、專給程式 Agent 用的 macOS 瀏覽器，Agent 從終端機下類似 playwright-cli 的指令操作，視窗不搶鍵盤焦點，多個 Agent 的分頁集中在一個儀表板即時顯示。
+        for: 同時跑好幾個程式 Agent、受不了 Playwright 視窗搶焦點的 Mac 使用者
+        note: 需要 macOS 26 以上；只支援 WebKit，沒有 Chrome DevTools Protocol
+        added: 2026-11-16
+      - repo: Tthanh2k6/turbo-browser-mcp
+        summary: 以 Playwright 為基礎的瀏覽器 MCP 伺服器，把幾十個細碎操作合併成 10 個批次工具，只回傳頁面變動的部分，一次呼叫就能填完整份表單，以減少 token 和來回次數。
+        for: 覺得瀏覽器 MCP 太耗 token、回合數太多的 Agent 開發者
+        note: 個人專案、剛發布不久；效能數字來自作者自己的基準測試
+        added: 2026-11-16
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -231,6 +241,11 @@ categories:
         for: 開發 Windows 桌面應用程式、想在乾淨環境測試的人
         note: 需要 Windows 11 24H2 以上的 Pro、Enterprise 或 Education 版
         added: 2026-11-12
+      - repo: claynicholson/copper-kicad-mcp
+        summary: 把 KiCad 接上 AI 的 MCP 伺服器，讓 Agent 畫電路圖、到 LCSC 找現貨零件、佈線，每次修改後重跑 ERC/DRC，最後輸出可以送 JLCPCB 等廠商打樣的製造檔。
+        for: 想用 AI 輔助設計 PCB 的硬體開發者與創客
+        note: 需要 KiCad 10；Windows 測試最完整，macOS 和 Linux 安裝方式較新
+        added: 2026-11-16
 
   - id: memory
     name: 記憶與上下文
@@ -335,6 +350,11 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
+      - repo: pmndrs/pine
+        summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
+        for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
+        note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
+        added: 2026-11-16
 
   - id: lists
     name: 外掛、技能與其他清單
