@@ -2,32 +2,32 @@
 
 > 精選 AI Agent、MCP 與相關開源工具，每天更新，附繁體中文導讀。
 
-目前收錄 **82** 個專案 · 數據更新：2026-11-17 · [網站版](https://markforcode.github.io/awesome-ai-agents/) · [RSS](https://markforcode.github.io/awesome-ai-agents/feed.xml)
+目前收錄 **87** 個專案 · 數據更新：2026-11-17 · [網站版](https://markforcode.github.io/awesome-ai-agents/) · [RSS](https://markforcode.github.io/awesome-ai-agents/feed.xml)
 
 每個專案都附「一句話介紹」和「適合誰」。⭐ 星星數、授權與更新狀態每天由 GitHub API 自動同步。
 
 ## 🆕 最近更新
 
+- [2026-11-17](daily/2026-11-17.md)
 - [2026-11-16](daily/2026-11-16.md)
 - [2026-11-15](daily/2026-11-15.md)
 - [2026-11-14](daily/2026-11-14.md)
 - [2026-11-13](daily/2026-11-13.md)
 - [2026-11-12](daily/2026-11-12.md)
 - [2026-11-11](daily/2026-11-11.md)
-- [2026-11-10](daily/2026-11-10.md)
 
 ## 目錄
 
 - [入門學習](#learn)（7）
 - [Agent 開發框架](#frameworks)（11）
-- [程式開發 Agent](#coding)（10）
-- [瀏覽器與電腦操作](#browser)（11）
+- [程式開發 Agent](#coding)（12）
+- [瀏覽器與電腦操作](#browser)（12）
 - [MCP 伺服器與 SDK](#mcp)（12）
 - [記憶與上下文](#memory)（6）
 - [網頁資料擷取](#scraping)（3）
 - [無程式碼平台與自架介面](#platforms)（8）
 - [研究與通用 Agent](#research)（4）
-- [外掛、技能與其他清單](#lists)（10）
+- [外掛、技能與其他清單](#lists)（12）
 
 <a id="learn"></a>
 
@@ -133,6 +133,12 @@
 - **[devvmhq/devvm](https://github.com/devvmhq/devvm)** · ⭐ 684 · Go · MIT  
   每個專案資料夾開一台獨立的 Lima 虛擬機，自動偵測需要的工具鏈，讓 Claude Code、Codex 等 Agent 在裡面工作，預設只能連到允許的網域。  
   👤 **適合**：想讓程式 Agent 放手做事、又不想讓它碰到本機的人　⚠️ 支援 macOS 13 以上與 Linux；作者提醒沙盒無法堵住所有漏洞，使用前先看安全說明
+- **[leostera/git-twig](https://github.com/leostera/git-twig)** · ⭐ 231 · Rust · MIT  
+  git 子指令，在 APFS、Btrfs 等支援寫入時複製的檔案系統上建立共用檔案內容的 worktree，讓多個 Agent 各開一份工作目錄時不必重複佔用硬碟空間。  
+  👤 **適合**：常讓多個程式 Agent 同時在不同 worktree 工作、大型 repo 很吃空間的人　⚠️ 一般 ext4 不支援，會改用原本的 git worktree；小型 repo 建立速度反而比較慢
+- **[stevenmichaelthomas/numbrone](https://github.com/stevenmichaelthomas/numbrone)** · ⭐ 142 · Shell · MIT  
+  架在 herdr 上的 Agent 分工 Skill：你只跟一個總管 Agent 下需求，它判斷屬於哪個專案再交給該專案的經理 Agent，經理開工人 Agent 各自在獨立 worktree 做事並回報。  
+  👤 **適合**：同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人　⚠️ 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
 
 <a id="browser"></a>
 
@@ -170,6 +176,9 @@
 - **[paul-nameless/agweb](https://github.com/paul-nameless/agweb)** · ⭐ 262 · Swift · MIT  
   以 WebKit 打造、專給程式 Agent 用的 macOS 瀏覽器，Agent 從終端機下類似 playwright-cli 的指令操作，視窗不搶鍵盤焦點，多個 Agent 的分頁集中在一個儀表板即時顯示。  
   👤 **適合**：同時跑好幾個程式 Agent、受不了 Playwright 視窗搶焦點的 Mac 使用者　⚠️ 需要 macOS 26 以上；只支援 WebKit，沒有 Chrome DevTools Protocol
+- **[hridaya423/phonedriver](https://github.com/hridaya423/phonedriver)** · ⭐ 158 · Rust · AGPL-3.0  
+  MCP 伺服器與 CLI，把 Android 或 iOS 畫面轉成編號清單讓 Agent 點選操作，遇到付款、刪除帳號等按鈕會先暫停問你。  
+  👤 **適合**：想讓 Claude Code、Codex 等 Agent 操作手機或測試自家 App 的人　⚠️ AGPL-3.0 授權；iPhone 實機需要 Mac、Xcode 與 Apple 開發者憑證；付款按鈕偵測靠文字標籤，只有圖示的按鈕抓不到
 - **[Tthanh2k6/turbo-browser-mcp](https://github.com/Tthanh2k6/turbo-browser-mcp)** · ⭐ 127 · JavaScript · MIT  
   以 Playwright 為基礎的瀏覽器 MCP 伺服器，把幾十個細碎操作合併成 10 個批次工具，只回傳頁面變動的部分，一次呼叫就能填完整份表單，以減少 token 和來回次數。  
   👤 **適合**：覺得瀏覽器 MCP 太耗 token、回合數太多的 Agent 開發者　⚠️ 個人專案、剛發布不久；效能數字來自作者自己的基準測試
@@ -329,12 +338,15 @@
 - **[JDhruv14/line-art-animation](https://github.com/JDhruv14/line-art-animation)** · ⭐ 965 · TypeScript · MIT  
   一個 Claude Skill 加上小型 TypeScript 函式庫，讓 Agent 用 SVG 做出會走路、會互動、有日夜變化的線稿風格動畫元件，也能逐格輸出成影片。  
   👤 **適合**：想在網頁加手繪風動畫插圖、或用 Agent 做動態視覺的前端開發者
-- **[Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer)** · ⭐ 760 · Python · MIT  
+- **[Dodaios/ste80-humanizer](https://github.com/Dodaios/ste80-humanizer)** · ⭐ 761 · Python · MIT  
   改寫文字的 Agent Skill，先刪掉常見的 AI 寫作痕跡，再依航太維修手冊用的簡化技術英文（ASD-STE100）規則把句子改短、改主動語態，事實不增不減。  
   👤 **適合**：常要讀或改 AI 產出的英文文件、想讓內容更好讀的人　⚠️ 只針對英文
 - **[Moh4696/cinematic-skill](https://github.com/Moh4696/cinematic-skill)** · ⭐ 702 · Python · MIT  
   讓程式 Agent 寫腳本、錄旁白、從 Wikimedia Commons 找公有領域圖片並記錄授權，再用 Python 程式碼逐格畫出一鏡到底的解說影片。  
   👤 **適合**：想用 Agent 做紀錄片風格短片或產品介紹影片的人　⚠️ 需要 Python、ffmpeg；最終配音可接任何 TTS 或真人錄音
+- **[sybil-solutions/inference-optimisation-skill](https://github.com/sybil-solutions/inference-optimisation-skill)** · ⭐ 653 · Python · MIT  
+  帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。  
+  👤 **適合**：自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
 - **[op7418/guizang-game-skill](https://github.com/op7418/guizang-game-skill)** · ⭐ 397 · JavaScript · AGPL-3.0  
   讓 Claude Code、Codex 等 Agent 照一套實際走過的流程，從規劃、美術素材、動作手感到打包，做出能在瀏覽器玩的 3D 動作遊戲。  
   👤 **適合**：想用 Agent 做網頁遊戲原型、但沒有遊戲開發經驗的人　⚠️ AGPL-3.0 授權；搭配 Tripo、即夢等素材生成服務效果較好，這些服務可能要付費；README 以簡體中文為主
@@ -344,6 +356,9 @@
 - **[nishuzumi/show-me-you-want-skill](https://github.com/nishuzumi/show-me-you-want-skill)** · ⭐ 201 · HTML · MIT  
   讓程式 Agent 動手寫程式前，先把要改的畫面和介面畫成單檔 HTML 線框原型，用顏色標出新增、修改、刪除的地方，你在圖上拖動、批注後把意見貼回去，確認後才開始寫程式。  
   👤 **適合**：常跟 Agent 對不上需求、改完介面才發現不是自己要的開發者　⚠️ 需要 Node 18 以上；README 以簡體中文為主
+- **[erkamyaman/unslopovich](https://github.com/erkamyaman/unslopovich)** · ⭐ 200 · JavaScript · MIT  
+  檢查 App 和網站介面的 Agent Skill 加靜態偵測工具，找出「一看就是 AI 做的」設計和常見使用痛點，可以只出診斷報告，也可以直接修改。  
+  👤 **適合**：用 AI 寫前端、覺得成品長得都一樣或不好用的開發者　⚠️ 只讀程式碼與畫面，不會實際測效能或修 bug
 
 ## 參與貢獻
 

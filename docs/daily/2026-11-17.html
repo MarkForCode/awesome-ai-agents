@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2026-11-17 每日 AI Agent 精選</title><meta name="description" content="精選 AI Agent、MCP 與相關開源工具，每天更新，附繁體中文導讀。">
+<link rel="alternate" type="application/rss+xml" title="Awesome AI Agents 繁中" href="https://markforcode.github.io/awesome-ai-agents/feed.xml">
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a65;--line:#e6e3dc;--acc:#0b6e4f;--card:#fff}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--fg:#ecebe6;--mut:#9b9a94;--line:#2c2b28;--acc:#5ccf9f;--card:#1c1c1a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif}
+.wrap{max-width:880px;margin:0 auto;padding:40px 20px 80px}
+header h1{font-size:2rem;margin:0 0 6px;letter-spacing:-.01em}header p{color:var(--mut);margin:0}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 8px}
+nav a{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.9rem;text-decoration:none;color:var(--fg)}
+nav a:hover{border-color:var(--acc);color:var(--acc)}
+h2{margin:48px 0 4px;font-size:1.35rem}h2+p.desc{color:var(--mut);margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+.card a.name{font-weight:600;color:var(--acc);text-decoration:none}.meta{color:var(--mut);font-size:.85rem;margin-left:6px}
+.card p{margin:6px 0 0}.for{color:var(--mut);font-size:.92rem}.note{color:#b4590a;font-size:.92rem}
+a{color:var(--acc)}.daily li{margin:6px 0}footer{margin-top:60px;color:var(--mut);font-size:.85rem}
+input#q{width:100%;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font-size:1rem;margin-top:16px}
+</style></head><body><div class="wrap"><p><a href="../">← 回到清單</a></p><h2>2026-11-17 讓 Agent 拿起手機，也讓多個 Agent 分工不打架</h2>
+<blockquote>今天收錄 5 個專案。一個讓程式 Agent 直接操作 Android 和 iPhone，兩個處理「同時開很多個 Agent」時會遇到的問題：硬碟空間和任務分派。另外兩個是 Skill，一個檢查 AI 做出來的介面，一個帶 Agent 調校本機推論伺服器的速度。</blockquote>
+<h3>今日新收錄</h3>
+<ul>
+<li><strong><a href="https://github.com/hridaya423/phonedriver">hridaya423/phonedriver</a></strong> · 瀏覽器與電腦操作<br>把手機畫面轉成編號清單交給 Agent，點完之後只回傳有變動的項目，不用一直截圖，作者自己測的 token 用量比 mobile-mcp 少很多。比較特別的是付款、刪除帳號等按鈕會被攔下來，由你在 Claude Code 的提示裡決定，模型本身無法代答。採 AGPL-3.0 授權，付款偵測靠按鈕文字，只有圖示的按鈕抓不到。</li>
+<li><strong><a href="https://github.com/leostera/git-twig">leostera/git-twig</a></strong> · 程式開發 Agent<br>讓 Agent 平行工作時，每個 worktree 都是一份完整的程式碼，大型 repo 很快就吃掉硬碟。git-twig 在 APFS、Btrfs 等檔案系統上用寫入時複製建立 worktree，作者的測試在 Linux kernel 上省下約 40 倍空間。小 repo 建立反而變慢，ext4 則會直接改用一般的 git worktree。</li>
+<li><strong><a href="https://github.com/stevenmichaelthomas/numbrone">stevenmichaelthomas/numbrone</a></strong> · 程式開發 Agent<br>架在 herdr 終端機工作區上的三層分工：總管 Agent 接需求並分派到專案，經理 Agent 開工人 Agent 在獨立 worktree 裡做事，再一層層回報。整套只有一個 Skill、一個 bash 腳本和幾份 Markdown 角色說明，狀態也存成純文字，想調整很直接。需要先裝 herdr。</li>
+<li><strong><a href="https://github.com/erkamyaman/unslopovich">erkamyaman/unslopovich</a></strong> · 外掛、技能與其他清單<br>不只挑紫色漸層這類「AI 感」設計，作者分析了大量 App 商店評論，先檢查使用者真正在抱怨的事，例如按鈕沒反應、錯誤訊息講不清楚、廣告打斷操作。可以只給評分報告，也可以直接修改並附上前後對照。README 也講明它不會測效能，報告會標示「Not profiled」。</li>
+<li><strong><a href="https://github.com/sybil-solutions/inference-optimisation-skill">sybil-solutions/inference-optimisation-skill</a></strong> · 外掛、技能與其他清單<br>重點不是給一份參數清單，而是一套流程：先算理論上限，一次只改一個設定、前後都跑對照組，最後還要通過長 context 檢索測試才算數。附的 Python 腳本能對任何 OpenAI 相容伺服器做測速，適合自己架 vLLM、SGLang 或 llama.cpp 的人。</li>
+</ul>
+<p>有想推薦的專案？歡迎到 <a href="https://github.com/markforcode/awesome-ai-agents/issues">GitHub</a> 開 issue。</p>
+<footer>由 <a href="https://github.com/markforcode/awesome-ai-agents">markforcode/awesome-ai-agents</a> 自動產生 · 內容以 CC0 釋出</footer></div></body></html>
