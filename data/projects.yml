@@ -135,6 +135,16 @@ categories:
         for: 想一眼看懂 Claude Code 正在做什麼、卡在哪裡的人
         note: 作者在 macOS 上開發測試；終端機版需要至少 144 欄寬
         added: 2026-11-13
+      - repo: leostera/git-twig
+        summary: git 子指令，在 APFS、Btrfs 等支援寫入時複製的檔案系統上建立共用檔案內容的 worktree，讓多個 Agent 各開一份工作目錄時不必重複佔用硬碟空間。
+        for: 常讓多個程式 Agent 同時在不同 worktree 工作、大型 repo 很吃空間的人
+        note: 一般 ext4 不支援，會改用原本的 git worktree；小型 repo 建立速度反而比較慢
+        added: 2026-11-17
+      - repo: stevenmichaelthomas/numbrone
+        summary: 架在 herdr 上的 Agent 分工 Skill：你只跟一個總管 Agent 下需求，它判斷屬於哪個專案再交給該專案的經理 Agent，經理開工人 Agent 各自在獨立 worktree 做事並回報。
+        for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
+        note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
+        added: 2026-11-17
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -181,6 +191,11 @@ categories:
         for: 想讓 Agent 操作 iPhone、又不想在手機上裝特殊工具的人
         note: 仍是 alpha；以 Linux 為主，Mac 版需另購一塊 LilyGO T-Display 開發板當橋接器，Windows 要從原始碼安裝；手機和電腦須在同一個 Wi-Fi
         added: 2026-11-13
+      - repo: hridaya423/phonedriver
+        summary: MCP 伺服器與 CLI，把 Android 或 iOS 畫面轉成編號清單讓 Agent 點選操作，遇到付款、刪除帳號等按鈕會先暫停問你。
+        for: 想讓 Claude Code、Codex 等 Agent 操作手機或測試自家 App 的人
+        note: AGPL-3.0 授權；iPhone 實機需要 Mac、Xcode 與 Apple 開發者憑證；付款按鈕偵測靠文字標籤，只有圖示的按鈕抓不到
+        added: 2026-11-17
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -385,3 +400,12 @@ categories:
         for: 想用 Agent 做網頁遊戲原型、但沒有遊戲開發經驗的人
         note: AGPL-3.0 授權；搭配 Tripo、即夢等素材生成服務效果較好，這些服務可能要付費；README 以簡體中文為主
         added: 2026-11-15
+      - repo: erkamyaman/unslopovich
+        summary: 檢查 App 和網站介面的 Agent Skill 加靜態偵測工具，找出「一看就是 AI 做的」設計和常見使用痛點，可以只出診斷報告，也可以直接修改。
+        for: 用 AI 寫前端、覺得成品長得都一樣或不好用的開發者
+        note: 只讀程式碼與畫面，不會實際測效能或修 bug
+        added: 2026-11-17
+      - repo: sybil-solutions/inference-optimisation-skill
+        summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
+        for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
+        added: 2026-11-17
