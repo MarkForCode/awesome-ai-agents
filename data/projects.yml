@@ -145,6 +145,11 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: erkamyaman/rust-anything
+        summary: 把 Node.js、Python、Go 等專案一段一段改寫成 Rust 的工具，先錄下原程式的實際行為，Agent 每改完一塊就拿錄下的案例逐一比對，全部相符才繼續。
+        for: 想把效能瓶頸或整個專案搬到 Rust、又怕改壞行為的開發者
+        note: 只保證跟錄到的案例一致，沒錄到的輸入、正規表示式差異等仍要自己補測；PHP 與 C# 還在預覽階段
+        added: 2026-11-18
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -365,11 +370,16 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
         added: 2026-11-16
+      - repo: huggingface/pybot
+        summary: Hugging Face 的實驗：讓上千個 Agent 只用 if-else、正規表示式和查表寫出一個純 Python 聊天機器人，不用任何模型權重。
+        for: 想了解大量 Agent 長時間協作寫程式能做到什麼程度的研究者與開發者
+        note: 研究性質的展示，不是拿來實際使用的聊天機器人
+        added: 2026-11-18
 
   - id: lists
     name: 外掛、技能與其他清單
@@ -429,3 +439,17 @@ categories:
         summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
         for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
         added: 2026-11-17
+      - repo: diego3g/craft
+        summary: 一組設計用的 Agent Skill，先訪談你寫出設計簡報與 DESIGN.md，再讓 Agent 做畫面時列出所有狀態、沿用設計系統元件，交件前先自我檢查。
+        for: 用 Agent 做 UI、希望成品一致且不漏掉空狀態與錯誤狀態的人
+        added: 2026-11-18
+      - repo: staryone/motlab
+        summary: 把影片的每一幕寫成 canvas 程式碼的影片引擎，附 Skill 讓 Agent 根據素材和指示寫出場景，你在檢視器裡逐格標註修改，最後輸出 MP4。
+        for: 想用 Agent 做產品宣傳片、教學動畫的開發者
+        note: 需要 Node 24 以上、Chrome 和 ffmpeg
+        added: 2026-11-18
+      - repo: mankidev/antialgorithm
+        summary: 處理命名、文案、海報等創意工作的 Claude Code Skill，要求模型先說出最普通的選項，再根據專案本身的條件刻意避開它。
+        for: 覺得 AI 給的名字、設計都很像、想要更有個性結果的人
+        note: 檢查 SVG 的腳本需要另外安裝 numpy、Pillow 與 rsvg-convert
+        added: 2026-11-18
