@@ -145,6 +145,11 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: morajabi/poo
+        summary: 找出開發工作和 Agent worktree 占掉的硬碟空間並安全清理，依「刪掉後多麻煩」分級，worktree 移除前會先備份未提交的變更；有 macOS 選單列 App、CLI，也附 MCP 伺服器和 Skill 讓程式 Agent 自己查、自己清。
+        for: 常開很多 worktree 平行跑 Agent、硬碟一直被 node_modules、target、DerivedData 塞滿的人
+        note: 選單列 App 只支援 macOS 15 以上，CLI 也能在 Linux 上用；Agent 預設只能清到你允許的等級，更高等級要你核准
+        added: 2026-11-19
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -429,3 +434,17 @@ categories:
         summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
         for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
         added: 2026-11-17
+      - repo: google-deepmind/robotics-antigravity-plugin
+        summary: Google DeepMind 出的機器人 Skill 組合，讓 Agent 寫控制程式、先在 MuJoCo 模擬裡測試，再把同一份程式跑在真的機械手臂上，也可以只做模擬。
+        for: 想用程式 Agent 做機器人模擬或實體手臂控制的研究者與自造者
+        note: 主要為 Google Antigravity 設計，也能用 npx skills 安裝到其他 Agent；視覺感知相關 Skill 需要 Gemini API key；操作實體機器人有受傷風險
+        added: 2026-11-19
+      - repo: nilbuild/stick-scene
+        summary: 讓 Agent 讀你的專案、提出幾個構想，再畫出一段火柴人小動畫說明產品在做什麼，每段動畫是一個沒有相依套件的 canvas，可以嵌進網頁。
+        for: 想幫產品首頁或功能介紹加上輕量動態插圖的開發者
+        added: 2026-11-19
+      - repo: AnIT012/nihongo
+        summary: 讓 AI 寫的日文更像真人寫的 Agent Skill，依讀者和場合調整敬語與語氣，不亂加內容、不改數字日期，也能模仿你自己的寫法。
+        for: 常用 AI 寫日文信件、公告、文件的人
+        note: README 以日文為主；只處理日文
+        added: 2026-11-19
