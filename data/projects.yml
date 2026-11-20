@@ -87,6 +87,11 @@ categories:
         summary: 前身是 MemGPT，打造有長期記憶、會隨使用持續學習的 Agent。
         for: 需要 Agent 記住使用者的應用
         added: 2026-11-10
+      - repo: srpadmanabhuni/agentest
+        summary: 讀取 Agent 已經錄下的 OpenTelemetry trace，用 165 項檢查判斷它實際做了什麼，例如有沒有越權呼叫工具、被提示注入帶走、口頭說成功但狀態沒變；不需要 API key 也不呼叫模型。
+        for: 想替 Agent 加上可重現測試、接進 CI 的開發者
+        note: 個人維護、剛發布不久；Agent 框架要能輸出 OpenTelemetry GenAI trace，或使用它支援的幾種原生記錄格式
+        added: 2026-11-20
 
   - id: coding
     name: 程式開發 Agent
@@ -145,6 +150,16 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: prapaa-ai/agav
+        summary: 終端機裡的程式開發 Agent，重點放在少花錢：重用快取的 context、遇到修不好的迴圈會主動停下、限制重試次數，子 Agent 的探索也獨立進行，可接 Anthropic、OpenAI、OpenRouter、Ollama 等模型。
+        for: 想找 Claude Code、Codex 以外的開源選擇，又在意 API 費用的開發者
+        note: 仍是實驗性 Beta，可能有不相容的改動；作者公布的成本比較中，花費較低但通過率也比 Codex 低
+        added: 2026-11-20
+      - repo: bashovski/reflektor
+        summary: 給程式 Agent 用的審查 Skill，把一個分支的改動整理成瀏覽器裡的審查報告，包含請求流程圖、資料庫變更、測試涵蓋率和 UI 截圖，你在頁面上留的意見會再交回給 Agent 修改。
+        for: 讓 Agent 寫了大量程式碼、需要人工審查又不想直接讀 diff 的開發者
+        note: 需要 Node.js 18 以上；分享報告給團隊會用到作者的 reflektor.dev 服務
+        added: 2026-11-20
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -261,6 +276,11 @@ categories:
         for: 想用 AI 輔助設計 PCB 的硬體開發者與創客
         note: 需要 KiCad 10；Windows 測試最完整，macOS 和 Linux 安裝方式較新
         added: 2026-11-16
+      - repo: JoeyZzZzZz/treasure-map
+        summary: 用 Ghidra 對整份解開的韌體做靜態分析，標出命令執行、記憶體複製等高風險呼叫點與資料來源，也能比對兩個韌體版本的修補差異，再透過 MCP 交給 Agent 查詢與判斷。
+        for: 做韌體或 IoT 安全研究、想讓 Agent 幫忙看大量二進位檔的人
+        note: 需要 Ghidra；工具本身不判定是否為漏洞，結論要靠模型與人工確認
+        added: 2026-11-20
 
   - id: memory
     name: 記憶與上下文
@@ -348,6 +368,11 @@ categories:
         for: 想讓團隊和 Agent 在同一個地方協作、又想自己掌握伺服器的團隊
         note: AGPL-3.0 授權；需要自備模型 API 金鑰；瀏覽器、手機與桌面 App 等功能仍在 beta
         added: 2026-11-13
+      - repo: cloveric/tarobird
+        summary: 自架的 Agent 工作區，把你電腦或伺服器上的 Codex、Claude Code、Kimi Code 等官方 CLI 收進同一個聊天介面，桌面和手機看到的是同一批對話，也能讓不同機器上的 Bot 互相交辦工作。
+        for: 同時在多台機器跑程式 Agent、想從手機追進度的人
+        note: AGPL-3.0 授權；多數引擎預設為完整權限，記得在 Bot 設定裡調整
+        added: 2026-11-20
 
   - id: research
     name: 研究與通用 Agent
@@ -365,7 +390,7 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
