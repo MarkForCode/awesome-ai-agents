@@ -145,6 +145,11 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: INK-Q/agy-fast
+        summary: Google Antigravity 的 MCP 外掛，把多次搜尋、多處編輯和驗證合併成一次工具呼叫，並在每個工作階段開頭先附上專案概況，減少 Agent 來回的輪數。
+        for: 每天用 Antigravity 寫程式、覺得等待時間太長的人
+        note: 內建背景自動更新，會從 GitHub 下載新版本取代本機檔案，不想要的話要自行關閉；成效數據是作者自己的使用紀錄
+        added: 2026-11-21
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -365,11 +370,16 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
         added: 2026-11-16
+      - repo: replit/amuse
+        summary: Replit 開源的自架個人 Agent，能上網查資料、操作一個你看得到也能接手的瀏覽器、設提醒和做小工具，寄信、送出表單或付款前都會先問你。
+        for: 想在自己電腦上跑一個全能助理、又希望重要動作都經過確認的人
+        note: 只支援 OpenAI 模型，需要自備 OpenAI API key 和 PostgreSQL；沒有登入機制，只能在本機使用，不要開放到網路上
+        added: 2026-11-21
 
   - id: lists
     name: 外掛、技能與其他清單
@@ -429,3 +439,16 @@ categories:
         summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
         for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
         added: 2026-11-17
+      - repo: nestjs/agent-skills
+        summary: NestJS 官方出的 Agent Skill，涵蓋建立專案、寫 API、驗證授權、資料庫、測試到上線部署，特別列出那些測試會過但實際有問題的常見錯誤。
+        for: 用 Claude Code、Codex 或 Cursor 寫 NestJS 後端的開發者
+        added: 2026-11-21
+      - repo: danielwh2/sprite-stacking
+        summary: 讓 Agent 把上、側、前、後四張像素圖組成可以旋轉的假 3D sprite 的 Skill，附切片腳本和能預覽、匯出 16 方向圖片的網頁檢視器。
+        for: 做像素風遊戲、想要可旋轉道具或載具的獨立開發者
+        added: 2026-11-21
+      - repo: baney75/smoothstone
+        summary: 讓小型本機模型也能做出可列印 3D 零件的 Skill 加命令列工具，模型只負責挑選測試過的範本和填尺寸，建模與列印檢查交給工具處理。
+        for: 想用本機小模型做 3D 列印零件的創客
+        note: 需要安裝 OpenSCAD 2026 以上版本（目前要用 nightly 版），小模型只能用現有範本，不能做全新造型
+        added: 2026-11-21
