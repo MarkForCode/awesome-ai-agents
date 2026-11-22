@@ -54,10 +54,6 @@ categories:
         summary: 讓多個扮演不同角色的 Agent 分工合作，例如研究員＋寫手＋審稿員。
         for: 想快速做出多 Agent 協作的人
         added: 2026-11-10
-      - repo: microsoft/autogen
-        summary: 微軟的多 Agent 對話框架，學術界和研究原型常用。
-        for: 研究多 Agent 互動的開發者
-        added: 2026-11-10
       - repo: agno-agi/agno
         summary: 輕量、速度快的 Python Agent 框架，內建記憶、知識庫與多 Agent 團隊。
         for: 想要簡潔 API 的 Python 開發者
@@ -145,6 +141,11 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: imuratalpay/ui-diff
+        summary: 改到介面的 PR 自動在修改前後的版本各截一次圖，比對像素差異並附上簡短的 UX 摘要，整理成一則固定的 PR 留言；可當 Agent Skill 用，也能從 CLI 或 CI 直接跑。
+        for: 用 Agent 改前端、想讓審查者不必自己跑起來就看到畫面變化的團隊
+        note: 需要 Node.js 20.10+，Windows 要用 WSL2；截圖存在同一個 repo 的孤立分支裡
+        added: 2026-11-22
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -348,6 +349,11 @@ categories:
         for: 想讓團隊和 Agent 在同一個地方協作、又想自己掌握伺服器的團隊
         note: AGPL-3.0 授權；需要自備模型 API 金鑰；瀏覽器、手機與桌面 App 等功能仍在 beta
         added: 2026-11-13
+      - repo: w01fb0ss/PiBot
+        summary: 桌面 App，建立幾個有名字、角色和各自模型的 Bot，單獨聊或拉進群組由協調者分派工作，在你指定的資料夾裡執行指令、改檔案、上網，有風險的步驟都要你核准。
+        for: 想在自己電腦上跑一組分工 Agent、又要看得到每一步改了什麼的人
+        note: 2026 年 11 月才公開，目前只有一位開發者；需自備模型金鑰或用 Ollama 跑本機模型
+        added: 2026-11-22
 
   - id: research
     name: 研究與通用 Agent
@@ -365,7 +371,7 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
@@ -429,3 +435,18 @@ categories:
         summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
         for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
         added: 2026-11-17
+      - repo: JimLiu/open-artifact
+        summary: 讓 Claude Code、Codex、Copilot 等程式 Agent 產出投影片、設計稿、白板、試算表、儀表板等「可編輯的成品」，在本機網頁上修改、留言、匯出，再把留言送回 Agent 繼續改。
+        for: 常叫 Agent 做簡報或設計稿、希望自己能直接動手微調的人
+        note: 前身是 baoyu-design；需要 Node.js 22.18+
+        added: 2026-11-22
+      - repo: sybil-solutions/skill-distill
+        summary: 把一次成功的 Claude Code 或 Codex 工作階段，反覆測試修改成一份開放權重模型也照著做得出來的 Skill：派學生模型重做同一件事、比對成果、修正 Skill，直到結果追上原本的版本。
+        for: 想把昂貴模型做好的工作交給便宜或本機模型重複執行的人
+        note: 需要 tmux，學生端 harness 要另外裝好；只有部分 harness 實測過
+        added: 2026-11-22
+      - repo: ThreatDefence/agentic-attack-detections
+        summary: 針對 PentAGI、HexStrike、Strix 等「讓 AI Agent 執行入侵」的框架整理的偵測規則、獵捕查詢與入侵指標，提供 Sigma、KQL、Suricata、YARA 等格式。
+        for: 負責偵測與應變的資安團隊，或想知道 Agent 被拿去攻擊時會留下哪些痕跡的人
+        note: 防禦用途，由資安廠商 ThreatDefence 維護
+        added: 2026-11-22
