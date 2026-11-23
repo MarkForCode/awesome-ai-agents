@@ -145,6 +145,16 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: diggerhq/opencomputer
+        summary: 在 Slack 裡 @ 一下就能派工的雲端程式 Agent，底層呼叫 Claude Code、Codex 或 OpenCode，每個工作階段用 rootless Podman 隔離，整套可以自架在一台 VM 上。
+        for: 想要類似 Devin 的團隊共用程式 Agent、又希望資料留在自己雲端的團隊
+        note: 自架需要 Cloudflare Workers 帳號（其他平台尚未支援），模型費用另計；官方也有付費的雲端版
+        added: 2026-11-23
+      - repo: EL4CTEO/fast-anything
+        summary: 先剖析程式找出最耗時的函式，交給程式 Agent 只把那幾個函式改寫成 Rust，再用錄下來的真實呼叫逐一比對結果一致才換上去，隨時可以關掉還原。
+        for: Python、Node、Ruby 等專案遇到效能瓶頸、但不想整個重寫的開發者
+        note: 需要安裝 Rust 工具鏈；專案剛公開不久
+        added: 2026-11-23
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -261,6 +271,11 @@ categories:
         for: 想用 AI 輔助設計 PCB 的硬體開發者與創客
         note: 需要 KiCad 10；Windows 測試最完整，macOS 和 Linux 安裝方式較新
         added: 2026-11-16
+      - repo: withcoral/coral
+        summary: 自架的 MCP 閘道，Agent 透過寫小段 TypeScript 呼叫各種服務，每次呼叫都先比對權限規則（允許、詢問、封鎖）才補上憑證送出，跑成功的程式碼還能存成自訂工具重複使用。
+        for: 要讓 Agent 碰公司內部系統、又需要細緻權限控管與稽核的團隊
+        note: 團隊共用版需要自備 OIDC 身分提供者與反向代理
+        added: 2026-11-23
 
   - id: memory
     name: 記憶與上下文
@@ -348,6 +363,11 @@ categories:
         for: 想讓團隊和 Agent 在同一個地方協作、又想自己掌握伺服器的團隊
         note: AGPL-3.0 授權；需要自備模型 API 金鑰；瀏覽器、手機與桌面 App 等功能仍在 beta
         added: 2026-11-13
+      - repo: Parcha-ai/agentrun
+        summary: 架在 Claude Code、Codex、OpenCode 或 pi 外面的自架平台，提供執行紀錄、斷線續跑、核准與花費上限，並讓 Agent 每次跑完留下筆記或 Skill，下次同樣的工作少花 token。
+        for: 有固定重複的 Agent 工作、想集中管理並壓低成本的團隊
+        note: 也有付費的雲端版；「自我學習」的效果依工作類型而定，README 的數據來自開發團隊自己的案例
+        added: 2026-11-23
 
   - id: research
     name: 研究與通用 Agent
@@ -365,7 +385,7 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
@@ -429,3 +449,7 @@ categories:
         summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
         for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
         added: 2026-11-17
+      - repo: GoogleChrome/modern-web-guidance
+        summary: 由 Chrome、Edge、Firefox 與 MDN 團隊維護的 Skill，讓程式 Agent 查詢現代網頁 API 的寫法與瀏覽器支援度，也能掃描既有專案裡可以換掉的舊寫法。
+        for: 用 AI 寫前端、常拿到過時 JavaScript 或多餘套件的開發者
+        added: 2026-11-23
