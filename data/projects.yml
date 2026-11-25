@@ -145,6 +145,16 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: EL4CTEO/shrink-anything
+        summary: 找出沒人呼叫的函式、沒人引用的檔案、沒用到的套件和圖檔並刪掉，每刪一批就跑你自己的測試，沒過就放回去；判斷不了的部分可以交給 Claude Code 或 Codex 處理。
+        for: 專案被程式 Agent 越寫越肥、想安全地清掉死碼的開發者
+        note: 安全程度取決於你的測試；沒有測試的專案只適合用來掃描，不建議直接刪
+        added: 2026-11-25
+      - repo: erkamyaman/safe-anything
+        summary: 用 Rust 寫的單一指令弱點掃描器，除了 SQL injection、XSS、外洩金鑰和相依套件 CVE，也會檢查 Claude Code、Codex、Cursor 的權限設定、MCP 伺服器與 Skill 裡的危險寫法。
+        for: 想在 commit 或 CI 前順手檢查程式碼，或安裝別人的 Skill、MCP 伺服器前先掃一遍的人
+        note: 以規則比對為主，不能取代完整的資安稽核
+        added: 2026-11-25
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -261,6 +271,11 @@ categories:
         for: 想用 AI 輔助設計 PCB 的硬體開發者與創客
         note: 需要 KiCad 10；Windows 測試最完整，macOS 和 Linux 安裝方式較新
         added: 2026-11-16
+      - repo: w1ccc/sap-data-mcp
+        summary: 讓 AI 助手唯讀查詢 SAP S/4HANA 的 MCP 伺服器，支援 RFC/BAPI、私有雲 OData 和公有雲 API，只能呼叫白名單內的標準讀取介面，每次呼叫都記進稽核日誌。
+        for: 常在 SAP GUI 裡翻事務碼查訂單、發票、庫存的企業 IT 與財務、採購人員
+        note: 非 SAP 官方產品；能查到什麼取決於系統開放的服務與帳號權限；README 以簡體中文為主
+        added: 2026-11-25
 
   - id: memory
     name: 記憶與上下文
@@ -365,11 +380,16 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
         added: 2026-11-16
+      - repo: AyushRajSinghParihar/weaponized-curiosity
+        summary: 讓 Claude Code 或 Codex 照固定流程做研究的 Skill，先找最可能推翻結論的證據，分成快速、深入、極限和自動實驗四種模式，可以限定搜尋與實驗次數。
+        for: 要做技術選型或驗證某個想法、希望 Agent 給出有證據的結論的人
+        note: 深入模式會分給多個子 Agent，token 用量比較多
+        added: 2026-11-25
 
   - id: lists
     name: 外掛、技能與其他清單
@@ -420,7 +440,7 @@ categories:
         for: 想用 Agent 做網頁遊戲原型、但沒有遊戲開發經驗的人
         note: AGPL-3.0 授權；搭配 Tripo、即夢等素材生成服務效果較好，這些服務可能要付費；README 以簡體中文為主
         added: 2026-11-15
-      - repo: erkamyaman/unslopovich
+      - repo: erkamyaman/unslop-anything
         summary: 檢查 App 和網站介面的 Agent Skill 加靜態偵測工具，找出「一看就是 AI 做的」設計和常見使用痛點，可以只出診斷報告，也可以直接修改。
         for: 用 AI 寫前端、覺得成品長得都一樣或不好用的開發者
         note: 只讀程式碼與畫面，不會實際測效能或修 bug
