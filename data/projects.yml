@@ -145,6 +145,11 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: deterministic-machines/deslop-please
+        summary: 檢查 Rust 程式碼結構的 linter，找出模組循環依賴、欄位被太多地方直接存取、介面太寬等問題，可以寫進 AGENTS.md 讓程式 Agent 改完就自己跑一次。
+        for: 讓 Agent 大量產生 Rust 程式碼、擔心架構越改越亂的開發者
+        note: 目前只支援 Rust；規則很嚴格，舊專案一跑通常會出現大量錯誤，需要先用允許清單壓下來
+        added: 2026-11-26
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -206,6 +211,11 @@ categories:
         for: 想讓 Claude Code、Codex 等 Agent 操作手機或測試自家 App 的人
         note: AGPL-3.0 授權；iPhone 實機需要 Mac、Xcode 與 Apple 開發者憑證；付款按鈕偵測靠文字標籤，只有圖示的按鈕抓不到
         added: 2026-11-17
+      - repo: Developing-Gamer/agent-sim
+        summary: 在一般 x86 Linux 機器上跑 iOS 模擬器，提供命令列工具和 MCP 伺服器，讓 Agent 安裝 App、把畫面讀成文字清單、點擊輸入，還能在瀏覽器裡即時觀看。
+        for: 沒有 Mac 也想讓 Agent 或 CI 測試 iOS App 的團隊
+        note: 仍在早期開發；需要 8 核心、16 GB 記憶體、60 GB 硬碟，第一次設定約半小時；建立在 GPL-3.0 的 x86Sim 上，Apple 的模擬器執行環境有它自己的授權條款
+        added: 2026-11-26
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -365,7 +375,7 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
@@ -420,7 +430,7 @@ categories:
         for: 想用 Agent 做網頁遊戲原型、但沒有遊戲開發經驗的人
         note: AGPL-3.0 授權；搭配 Tripo、即夢等素材生成服務效果較好，這些服務可能要付費；README 以簡體中文為主
         added: 2026-11-15
-      - repo: erkamyaman/unslopovich
+      - repo: erkamyaman/unslop-anything
         summary: 檢查 App 和網站介面的 Agent Skill 加靜態偵測工具，找出「一看就是 AI 做的」設計和常見使用痛點，可以只出診斷報告，也可以直接修改。
         for: 用 AI 寫前端、覺得成品長得都一樣或不好用的開發者
         note: 只讀程式碼與畫面，不會實際測效能或修 bug
@@ -429,3 +439,12 @@ categories:
         summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
         for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
         added: 2026-11-17
+      - repo: pritamux/gridlines
+        summary: 幫介面做「對齊檢查」的 Agent Skill，在畫面上畫出垂直參考線、量出圖示和文字的實際邊緣，列出沒對齊的項目再修改 padding。
+        for: 用 AI 寫前端、覺得側邊欄或選單看起來總是歪一點的人
+        note: 自動檢查腳本需要另外安裝 Playwright
+        added: 2026-11-26
+      - repo: Moh4696/inkworks-skill
+        summary: 讓程式 Agent 做出工程圖風格的互動 3D「運作原理」網頁的 Skill，用 three.js 程式碼畫出引擎、幫浦等機構，可以暫停、逐步播放、拖動循環圖表。
+        for: 想做技術解說頁面、教材或示意動畫的人
+        added: 2026-11-26
