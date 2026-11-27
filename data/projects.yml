@@ -145,6 +145,11 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: ertembiyik/xcslot
+        summary: 替 Xcode 專案準備幾個固定路徑的「建置槽」，把新開的 worktree 同步進去再建置，讓每個程式 Agent 的新 worktree 不必從頭編譯，第一次建置就能沿用快取。
+        for: 讓多個 Agent 在不同 worktree 同時開發 iOS／macOS App、被重複全量編譯拖慢的人
+        note: 只支援 macOS；Claude Code 外掛會加一個 hook，把所有 xcodebuild 指令改經 xcslot 執行
+        added: 2026-11-27
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -206,6 +211,11 @@ categories:
         for: 想讓 Claude Code、Codex 等 Agent 操作手機或測試自家 App 的人
         note: AGPL-3.0 授權；iPhone 實機需要 Mac、Xcode 與 Apple 開發者憑證；付款按鈕偵測靠文字標籤，只有圖示的按鈕抓不到
         added: 2026-11-17
+      - repo: vercel-labs/agent-desktop
+        summary: Vercel Labs 的桌面操作工具，讀取作業系統的無障礙樹，把 macOS、Windows、Linux 桌面 App 的介面轉成帶編號的 JSON，讓 Agent 照編號點擊、輸入，不靠截圖辨識；提供 CLI、MCP 伺服器和 C 函式庫。
+        for: 想讓 Agent 操作瀏覽器以外的桌面軟體、或做桌面 App 自動化測試的人
+        note: 快照和剪貼簿內容可能包含螢幕上的私人資料，不要放進公開紀錄；只看得到有實作無障礙介面的 App 元件
+        added: 2026-11-27
 
   - id: mcp
     name: MCP 伺服器與 SDK
@@ -365,11 +375,16 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
         added: 2026-11-16
+      - repo: langchain-samples/Persistent-Agent
+        summary: LangChain 官方範例，一個常駐在 Slack 的團隊助理，會記住每個人的偏好與目標、在背景跑研究與審查子 Agent、照團隊寫好的流程主動做事，並可旁聽頻道在需要時發言。
+        for: 想參考「主動式、長時間運作」Agent 該怎麼設計的團隊
+        note: 需要 LangSmith Plus 或 Enterprise 付費方案，外加 Anthropic 或 OpenAI API 金鑰；工具串接走 LangSmith 的服務
+        added: 2026-11-27
 
   - id: lists
     name: 外掛、技能與其他清單
@@ -420,7 +435,7 @@ categories:
         for: 想用 Agent 做網頁遊戲原型、但沒有遊戲開發經驗的人
         note: AGPL-3.0 授權；搭配 Tripo、即夢等素材生成服務效果較好，這些服務可能要付費；README 以簡體中文為主
         added: 2026-11-15
-      - repo: erkamyaman/unslopovich
+      - repo: erkamyaman/unslop-anything
         summary: 檢查 App 和網站介面的 Agent Skill 加靜態偵測工具，找出「一看就是 AI 做的」設計和常見使用痛點，可以只出診斷報告，也可以直接修改。
         for: 用 AI 寫前端、覺得成品長得都一樣或不好用的開發者
         note: 只讀程式碼與畫面，不會實際測效能或修 bug
@@ -429,3 +444,13 @@ categories:
         summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
         for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
         added: 2026-11-17
+      - repo: chipfighter/lodestar
+        summary: Claude Code 外掛，每個新對話開始時讓你挑一組 Skill，模型在這個對話裡只看得到這些 Skill；子 Agent 也能分配自己的組合，另有 Windows 系統匣程式管理分組，也支援 Codex。
+        for: 裝了一大堆 Skill、覺得每次都全部載入很雜亂的人
+        note: Windows 用戶端安裝檔尚未簽章；Codex 的切換需要透過這個用戶端
+        added: 2026-11-27
+      - repo: nexu-io/opengame
+        summary: 讓 Claude Code、Codex 等程式 Agent 做網頁遊戲的工具組，包含 Skill、MCP 伺服器和本機 Game Studio，附 25 個可改造的 Three.js／HTML5 遊戲範本，並能自動檢查邏輯、模擬難度、無頭瀏覽器試玩、錄製預告片。
+        for: 想讓 Agent 從範本快速改出小遊戲或試玩廣告的人
+        note: README 宣傳味較重；美術、音樂等素材生成要自備各家 API 金鑰或接作者的付費模型服務；專案剛發布幾天
+        added: 2026-11-27
