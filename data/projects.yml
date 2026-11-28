@@ -145,6 +145,16 @@ categories:
         for: 同時維護好幾個專案、想讓程式 Agent 平行處理多件事的人
         note: 需要先安裝 herdr，只支援 macOS 與 Linux；同時跑多個 Agent 會比較耗 token
         added: 2026-11-17
+      - repo: PrimeIntellect-ai/prime-agent
+        summary: Prime Intellect 的開源程式與研究 Agent，所有動作都透過常駐的 Python REPL 執行，子 Agent 用函式呼叫產生，還能依過去的執行紀錄修改自己的補充提示與 Skill。
+        for: 想跑長時間、背景任務，或研究 RLM 與自我改進 Agent 架構的開發者
+        note: 會用你的權限執行模型產生的 Python 與指令，官方說明不是沙箱，建議在獨立的 clone 或 worktree 裡使用
+        added: 2026-11-28
+      - repo: pierridotite/mobile-agent-testers
+        summary: 在 GitHub Actions 上同時開多台 iOS 模擬器與 Android 模擬器，每台由一個扮演不同使用者的 Claude Code Agent 操作你的 App，回報附截圖的 bug。
+        for: 開發行動 App、想在不寫測試腳本的情況下抓出多語系與無障礙問題的團隊
+        note: 公開 repo 的 runner 免費，但模型費用要自己付；把 Agent 路徑轉成 Maestro 測試的功能目前只支援 Android
+        added: 2026-11-28
 
   - id: browser
     name: 瀏覽器與電腦操作
@@ -261,6 +271,11 @@ categories:
         for: 想用 AI 輔助設計 PCB 的硬體開發者與創客
         note: 需要 KiCad 10；Windows 測試最完整，macOS 和 Linux 安裝方式較新
         added: 2026-11-16
+      - repo: lukendeasy/open-diagram
+        summary: 用短短的 Python 腳本描述區塊和連線來畫架構圖，產生時會自動檢查重疊、線條穿過區塊等排版問題並指出是哪裡，也提供 MCP 伺服器讓 Agent 直接畫。
+        for: 想讓 Agent 畫出整齊架構圖、流程圖的工程師與技術寫手
+        note: 輸出 PNG 需要電腦裡有 Chrome、Chromium 或 Edge
+        added: 2026-11-28
 
   - id: memory
     name: 記憶與上下文
@@ -365,7 +380,7 @@ categories:
         summary: 給 AI Agent 用的安全沙盒執行環境，可部署在 Kubernetes 上。
         for: 需要讓 Agent 安全執行程式碼的團隊
         added: 2026-11-10
-      - repo: pmndrs/pine
+      - repo: pmndre/pine
         summary: 以事件驅動的終端機 Agent，除了聊天和寫程式，還能訂閱資料夾、網頁、webhook、MQTT 等事件來源，事件發生時自動醒來處理；設定都由主 Agent 透過對話建立。
         for: 想讓 Agent 在背景盯著檔案、網站或裝置並自動反應的人
         note: 支援 macOS 與 Linux，Windows 需透過 Docker；電腦操作功能只支援 macOS
@@ -420,7 +435,7 @@ categories:
         for: 想用 Agent 做網頁遊戲原型、但沒有遊戲開發經驗的人
         note: AGPL-3.0 授權；搭配 Tripo、即夢等素材生成服務效果較好，這些服務可能要付費；README 以簡體中文為主
         added: 2026-11-15
-      - repo: erkamyaman/unslopovich
+      - repo: erkamyaman/unslop-anything
         summary: 檢查 App 和網站介面的 Agent Skill 加靜態偵測工具，找出「一看就是 AI 做的」設計和常見使用痛點，可以只出診斷報告，也可以直接修改。
         for: 用 AI 寫前端、覺得成品長得都一樣或不好用的開發者
         note: 只讀程式碼與畫面，不會實際測效能或修 bug
@@ -429,3 +444,8 @@ categories:
         summary: 帶 Agent 一步步調快本機 LLM 推論伺服器的 Skill，先算出理論上限，每次只改一個設定並與對照組比較，最後用長 context 測試確認沒有變笨或當掉。
         for: 自己架 vLLM、SGLang、llama.cpp 等推論伺服器、想榨出更多速度的人
         added: 2026-11-17
+      - repo: petergyang/video-explainer
+        summary: 把一個主題、文件、程式碼庫或網址做成一分鐘左右解說影片的 Agent Skill，有動態圖像、手繪、3D 三種風格，可加字幕、旁白和配樂。
+        for: 想快速做出教學或介紹短片的創作者與開發者
+        note: 需要 ffmpeg、Python、Node.js，約 400 MB 空間；Gemini 語音和配樂需要付費 API 金鑰，不用則改用本機產生
+        added: 2026-11-28
